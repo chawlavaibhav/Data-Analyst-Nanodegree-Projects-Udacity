@@ -1,0 +1,892 @@
+PassengerId	Survived	SurvivedC	Pclass	Name	Gender	Age	AgeClass	
+298	0	Not survived	1	Allison, Miss. Helen Loraine	Female	2	0-4	
+120	0	Not survived	3	Andersson, Miss. Ellis Anna Maria	Female	2	0-4	
+206	0	Not survived	3	Strom, Miss. Telma Matilda	Female	2	0-4	
+643	0	Not survived	3	Skoog, Miss. Margit Elizabeth	Female	2	0-4	
+375	0	Not survived	3	Palsson, Miss. Stina Viola	Female	3	0-4	
+531	1	Survived	2	Quick, Miss. Phyllis May	Female	2	0-4	
+44	1	Survived	2	Laroche, Miss. Simonne Marie Anne Andree	Female	3	0-4	
+619	1	Survived	2	Becker, Miss. Marion Louise	Female	4	0-4	
+751	1	Survived	2	Wells, Miss. Joan	Female	4	0-4	
+470	1	Survived	3	Baclini, Miss. Helene Barbara	Female	0.75	0-4	
+645	1	Survived	3	Baclini, Miss. Eugenie	Female	0.75	0-4	
+173	1	Survived	3	Johnson, Miss. Eleanor Ileen	Female	1	0-4	
+382	1	Survived	3	"Nakid, Miss. Maria (""Mary"")"	Female	1	0-4	
+480	1	Survived	3	Hirvonen, Miss. Hildur E	Female	2	0-4	
+11	1	Survived	3	Sandstrom, Miss. Marguerite Rut	Female	4	0-4	
+185	1	Survived	3	Kink-Heilmann, Miss. Luise Gretchen	Female	4	0-4	
+692	1	Survived	3	Karun, Miss. Manca	Female	4	0-4	
+165	0	Not survived	3	Panula, Master. Eino Viljami	Male	1	0-4	
+387	0	Not survived	3	Goodwin, Master. Sidney Leonard	Male	1	0-4	
+8	0	Not survived	3	Palsson, Master. Gosta Leonard	Male	2	0-4	
+17	0	Not survived	3	Rice, Master. Eugene	Male	2	0-4	
+825	0	Not survived	3	Panula, Master. Urho Abraham	Male	2	0-4	
+64	0	Not survived	3	Skoog, Master. Harald	Male	4	0-4	
+172	0	Not survived	3	Rice, Master. Arthur	Male	4	0-4	
+851	0	Not survived	3	Andersson, Master. Sigvard Harald Elias	Male	4	0-4	
+306	1	Survived	1	Allison, Master. Hudson Trevor	Male	0.92	0-4	
+446	1	Survived	1	Dodge, Master. Washington	Male	4	0-4	
+756	1	Survived	2	Hamalainen, Master. Viljo	Male	0.67	0-4	
+79	1	Survived	2	Caldwell, Master. Alden Gates	Male	0.83	0-4	
+832	1	Survived	2	Richards, Master. George Sibley	Male	0.83	0-4	
+184	1	Survived	2	Becker, Master. Richard F	Male	1	0-4	
+828	1	Survived	2	Mallet, Master. Andre	Male	1	0-4	
+341	1	Survived	2	Navratil, Master. Edmond Roger	Male	2	0-4	
+194	1	Survived	2	Navratil, Master. Michel M	Male	3	0-4	
+408	1	Survived	2	Richards, Master. William Rowe	Male	3	0-4	
+804	1	Survived	3	Thomas, Master. Assad Alexander	Male	0.42	0-4	
+789	1	Survived	3	Dean, Master. Bertram Vere	Male	1	0-4	
+262	1	Survived	3	Asplund, Master. Edvin Rojj Felix	Male	3	0-4	
+349	1	Survived	3	"Coutts, Master. William Loch ""William"""	Male	3	0-4	
+870	1	Survived	3	Johnson, Master. Harold Theodor	Male	4	0-4	
+420	0	Not survived	3	Van Impe, Miss. Catharina	Female	10	10-14	
+543	0	Not survived	3	Andersson, Miss. Sigrid Elisabeth	Female	11	10-14	
+15	0	Not survived	3	Vestrom, Miss. Hulda Amanda Adolfina	Female	14	10-14	
+112	0	Not survived	3	Zabour, Miss. Hileni	Female	14.5	10-14	
+436	1	Survived	1	Carter, Miss. Lucile Polk	Female	14	10-14	
+447	1	Survived	2	Mellinger, Miss. Madeleine Violet	Female	13	10-14	
+10	1	Survived	2	Nasser, Mrs. Nicholas (Adele Achem)	Female	14	10-14	
+781	1	Survived	3	Ayoub, Miss. Banoura	Female	13	10-14	
+40	1	Survived	3	Nicola-Yarred, Miss. Jamila	Female	14	10-14	
+820	0	Not survived	3	Skoog, Master. Karl Thorsten	Male	10	10-14	
+60	0	Not survived	3	Goodwin, Master. William Frederick	Male	11	10-14	
+732	0	Not survived	3	Hassan, Mr. Houssein G N	Male	11	10-14	
+684	0	Not survived	3	Goodwin, Mr. Charles Edward	Male	14	10-14	
+687	0	Not survived	3	Panula, Mr. Jaako Arnold	Male	14	10-14	
+803	1	Survived	1	Carter, Master. William Thornton II	Male	11	10-14	
+126	1	Survived	3	Nicola-Yarred, Master. Elias	Male	12	10-14	
+72	0	Not survived	3	Goodwin, Miss. Lillian Amy	Female	16	15-19	
+115	0	Not survived	3	Attalah, Miss. Malake	Female	17	15-19	
+39	0	Not survived	3	Vander Planke, Miss. Augusta Maria	Female	18	15-19	
+50	0	Not survived	3	Arnold-Franchi, Mrs. Josef (Josefine Franchi)	Female	18	15-19	
+655	0	Not survived	3	"Hegarty, Miss. Hanora ""Nora"""	Female	18	15-19	
+703	0	Not survived	3	Barbara, Miss. Saiide	Female	18	15-19	
+808	0	Not survived	3	Pettersson, Miss. Ellen Natalia	Female	18	15-19	
+690	1	Survived	1	Madill, Miss. Georgette Alexandra	Female	15	15-19	
+330	1	Survived	1	Hippach, Miss. Jean Gertrude	Female	16	15-19	
+505	1	Survived	1	Maioni, Miss. Roberta	Female	16	15-19	
+854	1	Survived	1	Lines, Miss. Mary Conover	Female	16	15-19	
+308	1	Survived	1	Penasco y Castellana, Mrs. Victor de Satode (Maria Josefa Perez de Soto y Vallejo)	Female	17	15-19	
+782	1	Survived	1	Dick, Mrs. Albert Adrian (Vera Gillespie)	Female	17	15-19	
+312	1	Survived	1	Ryerson, Miss. Emily Borie	Female	18	15-19	
+586	1	Survived	1	Taussig, Miss. Ruth	Female	18	15-19	
+701	1	Survived	1	Astor, Mrs. John Jacob (Madeleine Talmadge Force)	Female	18	15-19	
+137	1	Survived	1	Newsom, Miss. Helen Monypeny	Female	19	15-19	
+292	1	Survived	1	Bishop, Mrs. Dickinson H (Helen Walton)	Female	19	15-19	
+888	1	Survived	1	Graham, Miss. Margaret Edith	Female	19	15-19	
+85	1	Survived	2	Ilett, Miss. Bertha	Female	17	15-19	
+390	1	Survived	2	Lehmann, Miss. Bertha	Female	17	15-19	
+418	1	Survived	2	Silven, Miss. Lyyli Karoliina	Female	18	15-19	
+652	1	Survived	2	Doling, Miss. Elsie	Female	18	15-19	
+428	1	Survived	2	"Phillips, Miss. Kate Florence (""Mrs Kate Louise Phillips Marshall"")"	Female	19	15-19	
+547	1	Survived	2	Beane, Mrs. Edward (Ethel Clarke)	Female	19	15-19	
+23	1	Survived	3	"McGowan, Miss. Anna ""Annie"""	Female	15	15-19	
+831	1	Survived	3	Yasbeck, Mrs. Antoni (Selini Alexander)	Female	15	15-19	
+876	1	Survived	3	"Najib, Miss. Adele Kiamie ""Jane"""	Female	15	15-19	
+157	1	Survived	3	"Gilnagh, Miss. Katherine ""Katie"""	Female	16	15-19	
+209	1	Survived	3	"Carr, Miss. Helen ""Ellen"""	Female	16	15-19	
+69	1	Survived	3	Andersson, Miss. Erna Alexandra	Female	17	15-19	
+678	1	Survived	3	Turja, Miss. Anna Sofia	Female	18	15-19	
+787	1	Survived	3	Sjoblom, Miss. Anna Sofia	Female	18	15-19	
+856	1	Survived	3	Aks, Mrs. Sam (Leah Rosen)	Female	18	15-19	
+45	1	Survived	3	Devaney, Miss. Margaret Delia	Female	19	15-19	
+193	1	Survived	3	Andersen-Jensen, Miss. Carla Christine Nielsine	Female	19	15-19	
+506	0	Not survived	1	Penasco y Castellana, Mr. Victor de Satode	Male	18	15-19	
+28	0	Not survived	1	Fortune, Mr. Charles Alexander	Male	19	15-19	
+749	0	Not survived	1	Marvin, Mr. Daniel Warner	Male	19	15-19	
+792	0	Not survived	2	Gaskell, Mr. Alfred	Male	16	15-19	
+842	0	Not survived	2	Mudd, Mr. Thomas Charles	Male	16	15-19	
+145	0	Not survived	2	Andrew, Mr. Edgardo Samuel	Male	18	15-19	
+229	0	Not survived	2	Fahlstrom, Mr. Arne Jonas	Male	18	15-19	
+386	0	Not survived	2	Davies, Mr. Charles Henry	Male	18	15-19	
+758	0	Not survived	2	Bailey, Mr. Percy Andrew	Male	18	15-19	
+146	0	Not survived	2	Nicholls, Mr. Joseph Charles	Male	19	15-19	
+192	0	Not survived	2	Carbines, Mr. William	Male	19	15-19	
+239	0	Not survived	2	Pengelly, Mr. Frederick William	Male	19	15-19	
+353	0	Not survived	3	Elias, Mr. Tannous	Male	15	15-19	
+87	0	Not survived	3	Ford, Mr. William Neal	Male	16	15-19	
+139	0	Not survived	3	Osen, Mr. Olaf Elon	Male	16	15-19	
+267	0	Not survived	3	Panula, Mr. Ernesti Arvid	Male	16	15-19	
+283	0	Not survived	3	de Pelsmaeker, Mr. Alfons	Male	16	15-19	
+334	0	Not survived	3	Vander Planke, Mr. Leo Edmondus	Male	16	15-19	
+575	0	Not survived	3	Rush, Mr. Alfred George John	Male	16	15-19	
+747	0	Not survived	3	Abbott, Mr. Rossmore Edward	Male	16	15-19	
+765	0	Not survived	3	Eklund, Mr. Hans Linus	Male	16	15-19	
+164	0	Not survived	3	Calic, Mr. Jovo	Male	17	15-19	
+434	0	Not survived	3	Kallio, Mr. Nikolai Erland	Male	17	15-19	
+501	0	Not survived	3	Calic, Mr. Petar	Male	17	15-19	
+533	0	Not survived	3	Elias, Mr. Joseph Jr	Male	17	15-19	
+722	0	Not survived	3	Jensen, Mr. Svend Lauritz	Male	17	15-19	
+845	0	Not survived	3	Culumovic, Mr. Jeso	Male	17	15-19	
+176	0	Not survived	3	Klasen, Mr. Klas Albin	Male	18	15-19	
+372	0	Not survived	3	Wiklund, Mr. Jakob Alfred	Male	18	15-19	
+425	0	Not survived	3	Rosblom, Mr. Viktor Richard	Male	18	15-19	
+676	0	Not survived	3	Edvardsson, Mr. Gustaf Hjalmar	Male	18	15-19	
+689	0	Not survived	3	Fischer, Mr. Eberhard Thelander	Male	18	15-19	
+776	0	Not survived	3	Myhrman, Mr. Pehr Fabian Oliver Malkolm	Male	18	15-19	
+835	0	Not survived	3	Allum, Mr. Owen George	Male	18	15-19	
+68	0	Not survived	3	Crease, Mr. Ernest James	Male	19	15-19	
+144	0	Not survived	3	Burke, Mr. Jeremiah	Male	19	15-19	
+303	0	Not survived	3	Johnson, Mr. William Cahoone Jr	Male	19	15-19	
+373	0	Not survived	3	Beavan, Mr. William Thomas	Male	19	15-19	
+380	0	Not survived	3	Gustafsson, Mr. Karl Gideon	Male	19	15-19	
+567	0	Not survived	3	Stoytcheff, Mr. Ilia	Male	19	15-19	
+576	0	Not survived	3	Patchett, Mr. George	Male	19	15-19	
+647	0	Not survived	3	Cor, Mr. Liudevit	Male	19	15-19	
+688	0	Not survived	3	Dakic, Mr. Branko	Male	19	15-19	
+716	0	Not survived	3	Soholt, Mr. Peter Andreas Lauritz Andersen	Male	19	15-19	
+878	0	Not survived	3	Petroff, Mr. Nedelio	Male	19	15-19	
+551	1	Survived	1	Thayer, Mr. John Borland Jr	Male	17	15-19	
+227	1	Survived	2	Mellors, Mr. William John	Male	19	15-19	
+221	1	Survived	3	Sunderland, Mr. Victor Francis	Male	16	15-19	
+205	1	Survived	3	"Cohen, Mr. Gurshon ""Gus"""	Male	18	15-19	
+284	1	Survived	3	Dorking, Mr. Edward Arthur	Male	19	15-19	
+200	0	Not survived	2	"Yrois, Miss. Henriette (""Mrs Harbeck"")"	Female	24	20-24	
+114	0	Not survived	3	Jussila, Miss. Katriina	Female	20	20-24	
+405	0	Not survived	3	Oreskovic, Miss. Marija	Female	20	20-24	
+403	0	Not survived	3	Jussila, Miss. Mari Aina	Female	21	20-24	
+437	0	Not survived	3	"Ford, Miss. Doolina Margaret ""Daisy"""	Female	21	20-24	
+502	0	Not survived	3	Canavan, Miss. Mary	Female	21	20-24	
+475	0	Not survived	3	Strandberg, Miss. Ida Sofia	Female	22	20-24	
+883	0	Not survived	3	Dahlberg, Miss. Gerda Ulrika	Female	22	20-24	
+817	0	Not survived	3	Heininen, Miss. Wendla Maria	Female	23	20-24	
+294	0	Not survived	3	Haas, Miss. Aloisia	Female	24	20-24	
+628	1	Survived	1	Longley, Miss. Gretchen Fiske	Female	21	20-24	
+743	1	Survived	1	"Ryerson, Miss. Susan Parker ""Suzette"""	Female	21	20-24	
+152	1	Survived	1	Pears, Mrs. Thomas (Edith Wearne)	Female	22	20-24	
+357	1	Survived	1	Bowerman, Miss. Elsie Edith	Female	22	20-24	
+540	1	Survived	1	Frolicher, Miss. Hedwig Margaritha	Female	22	20-24	
+709	1	Survived	1	Cleaver, Miss. Alice	Female	22	20-24	
+89	1	Survived	1	Fortune, Miss. Mabel Helen	Female	23	20-24	
+394	1	Survived	1	Newell, Miss. Marjorie	Female	23	20-24	
+311	1	Survived	1	Hays, Miss. Margaret Bechstein	Female	24	20-24	
+342	1	Survived	1	Fortune, Miss. Alice Elizabeth	Female	24	20-24	
+370	1	Survived	1	Aubart, Mme. Leontine Pauline	Female	24	20-24	
+642	1	Survived	1	Sagesser, Mlle. Emma	Female	24	20-24	
+711	1	Survived	1	"Mayne, Mlle. Berthe Antonine (""Mrs de Villiers"")"	Female	24	20-24	
+57	1	Survived	2	Rugg, Miss. Emily	Female	21	20-24	
+324	1	Survived	2	Caldwell, Mrs. Albert Francis (Sylvia Mae Harbaugh)	Female	22	20-24	
+609	1	Survived	2	Laroche, Mrs. Joseph (Juliette Marie Louise Lafargue)	Female	22	20-24	
+474	1	Survived	2	Jerwan, Mrs. Amin S (Marie Marthe Thuillard)	Female	23	20-24	
+248	1	Survived	2	Hamalainen, Mrs. William (Anna)	Female	24	20-24	
+317	1	Survived	2	Kantor, Mrs. Sinai (Miriam Sternin)	Female	24	20-24	
+346	1	Survived	2	"Brown, Miss. Amelia ""Mildred"""	Female	24	20-24	
+438	1	Survived	2	Richards, Mrs. Sidney (Emily Hocking)	Female	24	20-24	
+601	1	Survived	2	Jacobsohn, Mrs. Sidney Samuel (Amy Frances Christy)	Female	24	20-24	
+616	1	Survived	2	Herman, Miss. Alice	Female	24	20-24	
+107	1	Survived	3	Salkjelsvik, Miss. Anna Kristine	Female	21	20-24	
+142	1	Survived	3	Nysten, Miss. Anna Sofia	Female	22	20-24	
+290	1	Survived	3	Connolly, Miss. Kate	Female	22	20-24	
+377	1	Survived	3	Landergren, Miss. Aurora Adelia	Female	22	20-24	
+555	1	Survived	3	Ohman, Miss. Velin	Female	22	20-24	
+650	1	Survived	3	Stanley, Miss. Amy Zillah Elsie	Female	23	20-24	
+143	1	Survived	3	Hakkarainen, Mrs. Pekka Pietari (Elin Matilda Dolck)	Female	24	20-24	
+395	1	Survived	3	Sandstrom, Mrs. Hjalmar (Agnes Charlotta Bengtsson)	Female	24	20-24	
+859	1	Survived	3	Baclini, Mrs. Solomon (Latifa Qurban)	Female	24	20-24	
+103	0	Not survived	1	White, Mr. Richard Frasar	Male	21	20-24	
+374	0	Not survived	1	Ringhini, Mr. Sante	Male	22	20-24	
+119	0	Not survived	1	Baxter, Mr. Quigg Edmond	Male	24	20-24	
+140	0	Not survived	1	Giglio, Mr. Victor	Male	24	20-24	
+73	0	Not survived	2	Hood, Mr. Ambrose Jr	Male	21	20-24	
+121	0	Not survived	2	Hickman, Mr. Stanley George	Male	21	20-24	
+862	0	Not survived	2	Giles, Mr. Frederick Edward	Male	21	20-24	
+136	0	Not survived	2	Richard, Mr. Emile	Male	23	20-24	
+399	0	Not survived	2	Pain, Dr. Alfred	Male	23	20-24	
+530	0	Not survived	2	Hocking, Mr. Richard George	Male	23	20-24	
+659	0	Not survived	2	Eitemiller, Mr. George Floyd	Male	23	20-24	
+734	0	Not survived	2	Berriman, Mr. William John	Male	23	20-24	
+735	0	Not survived	2	Troupiansky, Mr. Moses Aaron	Male	23	20-24	
+235	0	Not survived	2	Leyson, Mr. Robert William Norman	Male	24	20-24	
+656	0	Not survived	2	Hickman, Mr. Leonard Mark	Male	24	20-24	
+865	0	Not survived	2	Gill, Mr. John William	Male	24	20-24	
+13	0	Not survived	3	Saundercock, Mr. William Henry	Male	20	20-24	
+92	0	Not survived	3	Andreasson, Mr. Paul Edvin	Male	20	20-24	
+132	0	Not survived	3	Coelho, Mr. Domingos Fernandeo	Male	20	20-24	
+379	0	Not survived	3	Betros, Mr. Tannous	Male	20	20-24	
+442	0	Not survived	3	Hampe, Mr. Leon	Male	20	20-24	
+641	0	Not survived	3	Jensen, Mr. Hans Peder	Male	20	20-24	
+683	0	Not survived	3	Olsvigen, Mr. Thor Anderson	Male	20	20-24	
+726	0	Not survived	3	Oreskovic, Mr. Luka	Male	20	20-24	
+841	0	Not survived	3	Alhomaki, Mr. Ilmari Rudolf	Male	20	20-24	
+877	0	Not survived	3	Gustafsson, Mr. Alfred Ossian	Male	20	20-24	
+228	0	Not survived	3	"Lovell, Mr. John Hall (""Henry"")"	Male	20.5	20-24	
+38	0	Not survived	3	Cann, Mr. Ernest Charles	Male	21	20-24	
+52	0	Not survived	3	Nosworthy, Mr. Richard Cater	Male	21	20-24	
+116	0	Not survived	3	Pekoniemi, Mr. Edvard	Male	21	20-24	
+174	0	Not survived	3	Sivola, Mr. Antti Wilhelm	Male	21	20-24	
+409	0	Not survived	3	Birkeland, Mr. Hans Martin Monsen	Male	21	20-24	
+422	0	Not survived	3	Charters, Mr. David	Male	21	20-24	
+492	0	Not survived	3	Windelov, Mr. Einar	Male	21	20-24	
+495	0	Not survived	3	Stanley, Mr. Edward Roland	Male	21	20-24	
+624	0	Not survived	3	Hansen, Mr. Henry Damsgaard	Male	21	20-24	
+625	0	Not survived	3	"Bowen, Mr. David John ""Dai"""	Male	21	20-24	
+653	0	Not survived	3	Kalvik, Mr. Johannes Halvorsen	Male	21	20-24	
+837	0	Not survived	3	Pasic, Mr. Jakob	Male	21	20-24	
+1	0	Not survived	3	Braund, Mr. Owen Harris	Male	22	20-24	
+61	0	Not survived	3	Sirayanian, Mr. Orsen	Male	22	20-24	
+81	0	Not survived	3	Waelens, Mr. Achille	Male	22	20-24	
+113	0	Not survived	3	Barton, Mr. David John	Male	22	20-24	
+213	0	Not survived	3	Perkin, Mr. John Henry	Male	22	20-24	
+226	0	Not survived	3	Berglund, Mr. Karl Ivar Sven	Male	22	20-24	
+244	0	Not survived	3	Maenpaa, Mr. Matti Alexanteri	Male	22	20-24	
+288	0	Not survived	3	Naidenoff, Mr. Penko	Male	22	20-24	
+321	0	Not survived	3	Dennis, Mr. Samuel	Male	22	20-24	
+396	0	Not survived	3	Johansson, Mr. Erik	Male	22	20-24	
+479	0	Not survived	3	Karlsson, Mr. Nils August	Male	22	20-24	
+522	0	Not survived	3	Vovk, Mr. Janko	Male	22	20-24	
+589	0	Not survived	3	Gilinski, Mr. Eliezer	Male	22	20-24	
+351	0	Not survived	3	Odahl, Mr. Nils Martin	Male	23	20-24	
+754	0	Not survived	3	Jonkoff, Mr. Lalio	Male	23	20-24	
+834	0	Not survived	3	Augustsson, Mr. Albert	Male	23	20-24	
+297	0	Not survived	3	Hanna, Mr. Mansour	Male	23.5	20-24	
+90	0	Not survived	3	Celotti, Mr. Francesco	Male	24	20-24	
+211	0	Not survived	3	Ali, Mr. Ahmed	Male	24	20-24	
+295	0	Not survived	3	Mineff, Mr. Ivan	Male	24	20-24	
+500	0	Not survived	3	Svensson, Mr. Olof	Male	24	20-24	
+515	0	Not survived	3	Coleff, Mr. Satio	Male	24	20-24	
+566	0	Not survived	3	Davies, Mr. Alfred J	Male	24	20-24	
+744	0	Not survived	3	McNamee, Mr. Neal	Male	24	20-24	
+771	0	Not survived	3	Lievens, Mr. Rene Aime	Male	24	20-24	
+677	0	Not survived	3	Sawyer, Mr. Frederick Charles	Male	24.5	20-24	
+98	1	Survived	1	Greenfield, Mr. William Bertram	Male	23	20-24	
+623	1	Survived	3	Nakid, Mr. Sahid	Male	20	20-24	
+665	1	Survived	3	Lindqvist, Mr. Eino William	Male	20	20-24	
+763	1	Survived	3	Barah, Mr. Hanna Assi	Male	20	20-24	
+392	1	Survived	3	Jansson, Mr. Carl Olof	Male	21	20-24	
+554	1	Survived	3	"Leeni, Mr. Fahim (""Philip Zenni"")"	Male	22	20-24	
+128	1	Survived	3	Madsen, Mr. Fridtjof Arne	Male	24	20-24	
+499	0	Not survived	1	Allison, Mrs. Hudson J C (Bessie Waldo Daniels)	Female	25	25-29	
+313	0	Not survived	2	Lahtinen, Mrs. William (Anna Sylfven)	Female	26	25-29	
+42	0	Not survived	2	Turpin, Mrs. William John Robert (Dorothy Ann Wonnacott)	Female	27	25-29	
+247	0	Not survived	3	Lindahl, Miss. Agda Thorilda Viktoria	Female	25	25-29	
+730	0	Not survived	3	Ilmakangas, Miss. Pieta Sofia	Female	25	25-29	
+618	0	Not survived	3	Lobb, Mrs. William Arthur (Cordelia K Stanlick)	Female	26	25-29	
+101	0	Not survived	3	Petranec, Miss. Matilda	Female	28	25-29	
+424	0	Not survived	3	Danbom, Mrs. Ernst Gilbert (Anna Sigrid Maria Brogren)	Female	28	25-29	
+252	0	Not survived	3	Strom, Mrs. Wilhelm (Elna Matilda Persson)	Female	29	25-29	
+568	0	Not survived	3	Palsson, Mrs. Nils (Alma Cornelia Berglund)	Female	29	25-29	
+291	1	Survived	1	"Barber, Miss. Ellen ""Nellie"""	Female	26	25-29	
+731	1	Survived	1	Allen, Miss. Elisabeth Walton	Female	29	25-29	
+581	1	Survived	2	Christy, Miss. Julie Rachel	Female	25	25-29	
+881	1	Survived	2	Shelley, Mrs. William (Imanita Parrish Hall)	Female	25	25-29	
+718	1	Survived	2	"Troutt, Miss. Edwina Celia ""Winnie"""	Female	27	25-29	
+867	1	Survived	2	Duran y More, Miss. Asuncion	Female	27	25-29	
+400	1	Survived	2	Trout, Mrs. William H (Jessie L)	Female	28	25-29	
+427	1	Survived	2	Clarke, Mrs. Charles V (Ada Maria Winfield)	Female	28	25-29	
+444	1	Survived	2	Reynaldo, Ms. Encarnacion	Female	28	25-29	
+636	1	Survived	2	Davis, Miss. Mary	Female	28	25-29	
+875	1	Survived	2	Abelson, Mrs. Samuel (Hannah Wizosky)	Female	28	25-29	
+54	1	Survived	2	Faunthorpe, Mrs. Lizzie (Elizabeth Anne Wilkinson)	Female	29	25-29	
+67	1	Survived	2	Nye, Mrs. (Elizabeth Ramell)	Female	29	25-29	
+134	1	Survived	2	Weisz, Mrs. Leopold (Mathilde Francoise Pede)	Female	29	25-29	
+3	1	Survived	3	Heikkinen, Miss. Laina	Female	26	25-29	
+316	1	Survived	3	Nilsson, Miss. Helmina Josefina	Female	26	25-29	
+9	1	Survived	3	Johnson, Mrs. Oscar W (Elisabeth Vilhelmina Berg)	Female	27	25-29	
+217	1	Survived	3	Honkanen, Miss. Eliina	Female	27	25-29	
+824	1	Survived	3	Moor, Mrs. (Beila)	Female	27	25-29	
+256	1	Survived	3	Touma, Mrs. Darwis (Hanne Youssef Razi)	Female	29	25-29	
+378	0	Not survived	1	Widener, Mr. Harry Elkins	Male	27	25-29	
+35	0	Not survived	1	Meyer, Mr. Edgar Joseph	Male	28	25-29	
+84	0	Not survived	1	Carrau, Mr. Francisco M	Male	28	25-29	
+337	0	Not survived	1	Pears, Mr. Thomas Clinton	Male	29	25-29	
+783	0	Not survived	1	Long, Mr. Milton Clyde	Male	29	25-29	
+135	0	Not survived	2	Sobey, Mr. Samuel James Hayden	Male	25	25-29	
+344	0	Not survived	2	Sedgwick, Mr. Charles Frederick Waddington	Male	25	25-29	
+667	0	Not survived	2	Butler, Mr. Reginald Fenton	Male	25	25-29	
+686	0	Not survived	2	Laroche, Mr. Joseph Philippe Lemercier	Male	25	25-29	
+729	0	Not survived	2	Bryhl, Mr. Kurt Arnold Gottfrid	Male	25	25-29	
+620	0	Not survived	2	Gavey, Mr. Lawrence	Male	26	25-29	
+222	0	Not survived	2	Bracken, Mr. James H	Male	27	25-29	
+552	0	Not survived	2	Sharp, Mr. Percival James R	Male	27	25-29	
+887	0	Not survived	2	Montvila, Rev. Juozas	Male	27	25-29	
+343	0	Not survived	2	Collander, Mr. Erik Gustaf	Male	28	25-29	
+563	0	Not survived	2	Norman, Mr. Robert Douglas	Male	28	25-29	
+849	0	Not survived	2	Harper, Rev. John	Male	28	25-29	
+884	0	Not survived	2	Banfield, Mr. Frederick James	Male	28	25-29	
+118	0	Not survived	2	Turpin, Mr. William John Robert	Male	29	25-29	
+243	0	Not survived	2	Coleridge, Mr. Reginald Charles	Male	29	25-29	
+362	0	Not survived	2	del Carlo, Mr. Sebastiano	Male	29	25-29	
+76	0	Not survived	3	Moen, Mr. Sigurd Hansen	Male	25	25-29	
+354	0	Not survived	3	Arnold-Franchi, Mr. Josef	Male	25	25-29	
+443	0	Not survived	3	Petterson, Mr. Johan Emil	Male	25	25-29	
+694	0	Not survived	3	Saad, Mr. Khalil	Male	25	25-29	
+704	0	Not survived	3	Gallagher, Mr. Martin	Male	25	25-29	
+785	0	Not survived	3	Ali, Mr. William	Male	25	25-29	
+786	0	Not survived	3	Harmer, Mr. Abraham (David Lishin)	Male	25	25-29	
+795	0	Not survived	3	Dantcheff, Mr. Ristiu	Male	25	25-29	
+885	0	Not survived	3	Sutehall, Mr. Henry Jr	Male	25	25-29	
+70	0	Not survived	3	Kink, Mr. Vincenz	Male	26	25-29	
+74	0	Not survived	3	Chronopoulos, Mr. Apostolos	Male	26	25-29	
+94	0	Not survived	3	Dean, Mr. Bertram Frank	Male	26	25-29	
+163	0	Not survived	3	Bengtsson, Mr. John Viktor	Male	26	25-29	
+402	0	Not survived	3	Adams, Mr. John	Male	26	25-29	
+629	0	Not survived	3	Bostandyeff, Mr. Guentcho	Male	26	25-29	
+705	0	Not survived	3	Hansen, Mr. Henrik Juul	Male	26	25-29	
+811	0	Not survived	3	Alexander, Mr. William	Male	26	25-29	
+871	0	Not survived	3	Balkic, Mr. Cerin	Male	26	25-29	
+322	0	Not survived	3	Danoff, Mr. Yoto	Male	27	25-29	
+621	0	Not survived	3	Yasbeck, Mr. Antoni	Male	27	25-29	
+106	0	Not survived	3	Mionoff, Mr. Stoytcho	Male	28	25-29	
+170	0	Not survived	3	Ling, Mr. Lee	Male	28	25-29	
+201	0	Not survived	3	Vande Walle, Mr. Nestor Cyriel	Male	28	25-29	
+282	0	Not survived	3	Olsson, Mr. Nils Johan Goransson	Male	28	25-29	
+314	0	Not survived	3	Hendekovic, Mr. Ignjac	Male	28	25-29	
+356	0	Not survived	3	Vanden Steen, Mr. Leo Peter	Male	28	25-29	
+393	0	Not survived	3	Gustafsson, Mr. Johan Birger	Male	28	25-29	
+404	0	Not survived	3	Hakkarainen, Mr. Pekka Pietari	Male	28	25-29	
+509	0	Not survived	3	Olsen, Mr. Henry Margido	Male	28	25-29	
+757	0	Not survived	3	Carlsson, Mr. August Sigfrid	Male	28	25-29	
+58	0	Not survived	3	Novel, Mr. Mansouer	Male	28.5	25-29	
+736	0	Not survived	3	Williams, Mr. Leslie	Male	28.5	25-29	
+91	0	Not survived	3	Christmann, Mr. Emil	Male	29	25-29	
+232	0	Not survived	3	Larsson, Mr. Bengt Edvin	Male	29	25-29	
+423	0	Not survived	3	Zimmerman, Mr. Leo	Male	29	25-29	
+478	0	Not survived	3	Braund, Mr. Lewis Richard	Male	29	25-29	
+714	0	Not survived	3	Larsson, Mr. August Viktor	Male	29	25-29	
+371	1	Survived	1	Harder, Mr. George Achilles	Male	25	25-29	
+485	1	Survived	1	Bishop, Mr. Dickinson H	Male	25	25-29	
+890	1	Survived	1	Behr, Mr. Karl Howell	Male	26	25-29	
+608	1	Survived	1	Daniel, Mr. Robert Williams	Male	27	25-29	
+682	1	Survived	1	Hassab, Mr. Hammad	Male	27	25-29	
+725	1	Survived	1	Chambers, Mr. Norman Campbell	Male	27	25-29	
+24	1	Survived	1	Sloper, Mr. William Thompson	Male	28	25-29	
+431	1	Survived	1	Bjornstrom-Steffansson, Mr. Mauritz Hakan	Male	28	25-29	
+268	1	Survived	3	Persson, Mr. Ernst Ulrik	Male	25	25-29	
+272	1	Survived	3	Tornquist, Mr. William Henry	Male	25	25-29	
+208	1	Survived	3	Albimona, Mr. Nassef Cassem	Male	26	25-29	
+510	1	Survived	3	Lang, Mr. Fang	Male	26	25-29	
+147	1	Survived	3	"Andersson, Mr. August Edvard (""Wennerstrom"")"	Male	27	25-29	
+805	1	Survived	3	Hedman, Mr. Oskar Arvid	Male	27	25-29	
+822	1	Survived	3	Lulic, Mr. Nikola	Male	27	25-29	
+82	1	Survived	3	Sheerlinck, Mr. Jan Baptist	Male	29	25-29	
+456	1	Survived	3	Jalsevac, Mr. Ivan	Male	29	25-29	
+511	1	Survived	3	Daly, Mr. Eugene Patrick	Male	29	25-29	
+535	0	Not survived	3	Cacic, Miss. Marija	Female	30	30-34	
+800	0	Not survived	3	Van Impe, Mrs. Jean Baptiste (Rosalie Paula Govaert)	Female	30	30-34	
+768	0	Not survived	3	Mangan, Miss. Mary	Female	30.5	30-34	
+19	0	Not survived	3	Vander Planke, Mrs. Julius (Emelia Maria Vandemoortele)	Female	31	30-34	
+397	0	Not survived	3	Olsson, Miss. Elina	Female	31	30-34	
+658	0	Not survived	3	Bourke, Mrs. John (Catherine)	Female	32	30-34	
+258	1	Survived	1	Cherry, Miss. Gladys	Female	30	30-34	
+310	1	Survived	1	Francatelli, Miss. Laura Mabel	Female	30	30-34	
+521	1	Survived	1	Perreault, Miss. Anne	Female	30	30-34	
+538	1	Survived	1	LeRoy, Miss. Bertha	Female	30	30-34	
+843	1	Survived	1	Serepeca, Miss. Augusta	Female	30	30-34	
+216	1	Survived	1	Newell, Miss. Madeleine	Female	31	30-34	
+319	1	Survived	1	Wick, Miss. Mary Natalie	Female	31	30-34	
+219	1	Survived	1	Bazzani, Miss. Albina	Female	32	30-34	
+413	1	Survived	1	Minahan, Miss. Daisy E	Female	33	30-34	
+760	1	Survived	1	Rothes, the Countess. of (Lucy Noel Martha Dyer-Edwards)	Female	33	30-34	
+810	1	Survived	1	Chambers, Mrs. Norman Campbell (Bertha Griggs)	Female	33	30-34	
+323	1	Survived	2	Slayter, Miss. Hilda Mary	Female	30	30-34	
+727	1	Survived	2	Renouf, Mrs. Peter Henry (Lillian Jefferys)	Female	30	30-34	
+748	1	Survived	2	Sinkkonen, Miss. Anna	Female	30	30-34	
+802	1	Survived	2	Collyer, Mrs. Harvey (Charlotte Annie Tate)	Female	31	30-34	
+191	1	Survived	2	Pinsky, Mrs. (Rosa)	Female	32	30-34	
+124	1	Survived	2	Webber, Miss. Susan	Female	32.5	30-34	
+473	1	Survived	2	West, Mrs. Edwy Arthur (Ada Mary Worth)	Female	33	30-34	
+507	1	Survived	2	Quick, Mrs. Frederick Charles (Jane Richards)	Female	33	30-34	
+99	1	Survived	2	Doling, Mrs. John T (Ada Julia Bone)	Female	34	30-34	
+417	1	Survived	2	Drew, Mrs. James Vivian (Lulu Thorne Christian)	Female	34	30-34	
+517	1	Survived	2	Lemore, Mrs. (Amelia Milley)	Female	34	30-34	
+577	1	Survived	2	Garside, Miss. Ethel	Female	34	30-34	
+80	1	Survived	3	Dowdell, Miss. Elizabeth	Female	30	30-34	
+329	1	Survived	3	Goldsmith, Mrs. Frank John (Emily Alice Brown)	Female	31	30-34	
+798	1	Survived	3	Osman, Mrs. Mara	Female	31	30-34	
+86	1	Survived	3	Backstrom, Mrs. Karl Alfred (Maria Mathilda Gustafsson)	Female	33	30-34	
+453	0	Not survived	1	Foreman, Mr. Benjamin Laventall	Male	30	30-34	
+672	0	Not survived	1	Davidson, Mr. Thornton	Male	31	30-34	
+868	0	Not survived	1	Roebling, Mr. Washington Augustus II	Male	31	30-34	
+873	0	Not survived	1	Carlsson, Mr. Frans Olof	Male	33	30-34	
+179	0	Not survived	2	Hale, Mr. Reginald	Male	30	30-34	
+214	0	Not survived	2	Givard, Mr. Hans Kristensen	Male	30	30-34	
+220	0	Not survived	2	Harris, Mr. Walter	Male	30	30-34	
+309	0	Not survived	2	Abelson, Mr. Samuel	Male	30	30-34	
+419	0	Not survived	2	Matthews, Mr. William John	Male	30	30-34	
+440	0	Not survived	2	Kvillner, Mr. Johan Henrik Johannesson	Male	31	30-34	
+638	0	Not survived	2	Collyer, Mr. Harvey	Male	31	30-34	
+818	0	Not survived	2	Mallet, Mr. Albert	Male	31	30-34	
+71	0	Not survived	2	Jenkin, Mr. Stephen Curnow	Male	32	30-34	
+666	0	Not survived	2	Hickman, Mr. Lewis	Male	32	30-34	
+123	0	Not survived	2	Nasser, Mr. Nicholas	Male	32.5	30-34	
+240	0	Not survived	2	Hunt, Mr. George Henry	Male	33	30-34	
+100	0	Not survived	2	Kantor, Mr. Sinai	Male	34	30-34	
+406	0	Not survived	2	Gale, Mr. Shadrach	Male	34	30-34	
+477	0	Not survived	2	Renouf, Mr. Peter Henry	Male	34	30-34	
+723	0	Not survived	2	Gillespie, Mr. William Henry	Male	34	30-34	
+801	0	Not survived	2	Ponesell, Mr. Martin	Male	34	30-34	
+158	0	Not survived	3	Corn, Mr. Harry	Male	30	30-34	
+245	0	Not survived	3	Attalah, Mr. Sleiman	Male	30	30-34	
+254	0	Not survived	3	Lobb, Mr. William Arthur	Male	30	30-34	
+366	0	Not survived	3	Adahl, Mr. Mauritz Nils Martin	Male	30	30-34	
+489	0	Not survived	3	Somerton, Mr. Francis William	Male	30	30-34	
+607	0	Not survived	3	Karaic, Mr. Milan	Male	30	30-34	
+799	0	Not survived	3	Ibrahim Shawah, Mr. Yousseff	Male	30	30-34	
+815	0	Not survived	3	Tomlin, Mr. Ernest Portage	Male	30.5	30-34	
+750	0	Not survived	3	Connaghton, Mr. Michael	Male	31	30-34	
+806	0	Not survived	3	Johansson, Mr. Karl Johan	Male	31	30-34	
+207	0	Not survived	3	Backstrom, Mr. Karl Alfred	Male	32	30-34	
+383	0	Not survived	3	Tikkanen, Mr. Juho	Male	32	30-34	
+520	0	Not survived	3	Pavlovic, Mr. Stefo	Male	32	30-34	
+637	0	Not survived	3	Leinonen, Mr. Antti Gustaf	Male	32	30-34	
+770	0	Not survived	3	Gronnestad, Mr. Daniel Danielsen	Male	32	30-34	
+891	0	Not survived	3	Dooley, Mr. Patrick	Male	32	30-34	
+104	0	Not survived	3	Johansson, Mr. Gustaf Joel	Male	33	30-34	
+131	0	Not survived	3	Drazenoic, Mr. Jozef	Male	33	30-34	
+286	0	Not survived	3	Stankovic, Mr. Ivan	Male	33	30-34	
+549	0	Not survived	3	Goldsmith, Mr. Frank John	Male	33	30-34	
+720	0	Not survived	3	Johnson, Mr. Malkolm Joackim	Male	33	30-34	
+753	0	Not survived	3	Vande Velde, Mr. Johannes Joseph	Male	33	30-34	
+882	0	Not survived	3	Markun, Mr. Johann	Male	33	30-34	
+203	0	Not survived	3	Johanson, Mr. Jakob Alfred	Male	34	30-34	
+462	0	Not survived	3	Morley, Mr. William	Male	34	30-34	
+617	0	Not survived	3	Danbom, Mr. Ernst Gilbert	Male	34	30-34	
+759	0	Not survived	3	Theobald, Mr. Thomas Leonard	Male	34	30-34	
+844	0	Not survived	3	Lemberopolous, Mr. Peter L	Male	34.5	30-34	
+691	1	Survived	1	Dick, Mr. Albert Adrian	Male	31	30-34	
+633	1	Survived	1	Stahelin-Maeglin, Dr. Max	Male	32	30-34	
+448	1	Survived	1	Seward, Mr. Frederic Kimber	Male	34	30-34	
+674	1	Survived	2	Wilhelms, Mr. Charles	Male	31	30-34	
+544	1	Survived	2	Beane, Mr. Edward	Male	32	30-34	
+22	1	Survived	2	Beesley, Mr. Lawrence	Male	34	30-34	
+287	1	Survived	3	de Mulder, Mr. Theodore	Male	30	30-34	
+745	1	Survived	3	Stranden, Mr. Juho	Male	31	30-34	
+75	1	Survived	3	Bing, Mr. Lee	Male	32	30-34	
+430	1	Survived	3	Pickard, Mr. Berk (Berk Trembisky)	Male	32	30-34	
+570	1	Survived	3	Jonsson, Mr. Carl	Male	32	30-34	
+580	1	Survived	3	Jussila, Mr. Eiriik	Male	32	30-34	
+839	1	Survived	3	Chip, Mr. Chang	Male	32	30-34	
+358	0	Not survived	2	Funk, Miss. Annie Clemmer	Female	38	35-39	
+504	0	Not survived	3	Laitinen, Miss. Kristina Sofia	Female	37	35-39	
+611	0	Not survived	3	Andersson, Mrs. Anders Johan (Alfrida Konstantia Brogren)	Female	39	35-39	
+886	0	Not survived	3	Rice, Mrs. William (Margaret Norton)	Female	39	35-39	
+4	1	Survived	1	Futrelle, Mrs. Jacques Heath (Lily May Peel)	Female	35	35-39	
+231	1	Survived	1	Harris, Mrs. Henry Birkhardt (Irene Wallach)	Female	35	35-39	
+259	1	Survived	1	Ward, Miss. Anna	Female	35	35-39	
+270	1	Survived	1	Bissette, Miss. Amelia	Female	35	35-39	
+384	1	Survived	1	Holverson, Mrs. Alexander Oskar (Mary Aline Towner)	Female	35	35-39	
+487	1	Survived	1	Hoyt, Mrs. Frederick Maxfield (Jane Anne Forby)	Female	35	35-39	
+326	1	Survived	1	Young, Miss. Marie Grice	Female	36	35-39	
+541	1	Survived	1	Crosby, Miss. Harriet R	Female	36	35-39	
+764	1	Survived	1	Carter, Mrs. William Ernest (Lucile Polk)	Female	36	35-39	
+2	1	Survived	1	Cumings, Mrs. John Bradley (Florence Briggs Thayer)	Female	38	35-39	
+62	1	Survived	1	Icard, Miss. Amelie	Female	38	35-39	
+717	1	Survived	1	Endres, Miss. Caroline Louise	Female	38	35-39	
+559	1	Survived	1	Taussig, Mrs. Emil (Tillie Mandelbaum)	Female	39	35-39	
+578	1	Survived	1	Silvey, Mrs. William Baird (Alice Munger)	Female	39	35-39	
+582	1	Survived	1	Thayer, Mrs. John Borland (Marian Longstreth Morris)	Female	39	35-39	
+836	1	Survived	1	Compton, Miss. Sara Rebecca	Female	39	35-39	
+212	1	Survived	2	Cameron, Miss. Clear Annie	Female	35	35-39	
+328	1	Survived	2	Ball, Mrs. (Ada E Hall)	Female	36	35-39	
+388	1	Survived	2	Buss, Miss. Kate	Female	36	35-39	
+519	1	Survived	2	"Angle, Mrs. William A (Florence ""Mary"" Agnes Hughes)"	Female	36	35-39	
+280	1	Survived	3	Abbott, Mrs. Stanton (Rosa Hunt)	Female	35	35-39	
+560	1	Survived	3	de Messemaeker, Mrs. Guillaume Joseph (Emma)	Female	36	35-39	
+26	1	Survived	3	Asplund, Mrs. Carl Oscar (Selma Augusta Emilia Johansson)	Female	38	35-39	
+584	0	Not survived	1	Ross, Mr. John Hugo	Male	36	35-39	
+742	0	Not survived	1	Cavendish, Mr. Tyrell William	Male	36	35-39	
+138	0	Not survived	1	Futrelle, Mr. Jacques Heath	Male	37	35-39	
+274	0	Not survived	1	Natsch, Mr. Charles H	Male	37	35-39	
+333	0	Not survived	1	Graham, Mr. George Edward	Male	38	35-39	
+823	0	Not survived	1	Reuchlin, Jonkheer. John George	Male	38	35-39	
+807	0	Not survived	1	Andrews, Mr. Thomas Jr	Male	39	35-39	
+21	0	Not survived	2	Fynney, Mr. Joseph J	Male	35	35-39	
+813	0	Not survived	2	Slemen, Mr. Richard James	Male	35	35-39	
+266	0	Not survived	2	Reeves, Mr. David	Male	36	35-39	
+293	0	Not survived	2	Levy, Mr. Rene Jacques	Male	36	35-39	
+345	0	Not survived	2	Fox, Mr. Stanley Hubert	Male	36	35-39	
+451	0	Not survived	2	West, Mr. Edwy Arthur	Male	36	35-39	
+149	0	Not survived	2	"Navratil, Mr. Michel (""Louis M Hoffman"")"	Male	36.5	35-39	
+595	0	Not survived	2	Chapman, Mr. John Henry	Male	37	35-39	
+706	0	Not survived	2	"Morley, Mr. Henry Samuel (""Mr Henry Marshall"")"	Male	39	35-39	
+796	0	Not survived	2	Otter, Mr. Richard	Male	39	35-39	
+809	0	Not survived	2	Meyer, Mr. August	Male	39	35-39	
+5	0	Not survived	3	Allen, Mr. William Henry	Male	35	35-39	
+364	0	Not survived	3	Asim, Mr. Adola	Male	35	35-39	
+591	0	Not survived	3	Rintamaki, Mr. Matti	Male	35	35-39	
+615	0	Not survived	3	Brocklebank, Mr. William Alfred	Male	35	35-39	
+848	0	Not survived	3	Markoff, Mr. Marin	Male	35	35-39	
+180	0	Not survived	3	Leonard, Mr. Lionel	Male	36	35-39	
+190	0	Not survived	3	Turcin, Mr. Stjepan	Male	36	35-39	
+596	0	Not survived	3	Van Impe, Mr. Jean Baptiste	Male	36	35-39	
+606	0	Not survived	3	Lindell, Mr. Edvard Bengtsson	Male	36	35-39	
+664	0	Not survived	3	Coleff, Mr. Peju	Male	36	35-39	
+105	0	Not survived	3	Gustafsson, Mr. Anders Vilhelm	Male	37	35-39	
+109	0	Not survived	3	Rekic, Mr. Tido	Male	38	35-39	
+466	0	Not survived	3	Goncalves, Mr. Manuel Estanslas	Male	38	35-39	
+472	0	Not survived	3	Cacic, Mr. Luka	Male	38	35-39	
+14	0	Not survived	3	Andersson, Mr. Anders Johan	Male	39	35-39	
+529	0	Not survived	3	Salonen, Mr. Johan Werner	Male	39	35-39	
+812	0	Not survived	3	Lester, Mr. James	Male	39	35-39	
+605	1	Survived	1	"Homer, Mr. Harry (""Mr E Haven"")"	Male	35	35-39	
+702	1	Survived	1	Silverthorne, Mr. Spencer Victor	Male	35	35-39	
+738	1	Survived	1	Lesurer, Mr. Gustave J	Male	35	35-39	
+391	1	Survived	1	Carter, Mr. William Ernest	Male	36	35-39	
+513	1	Survived	1	McGough, Mr. James Robert	Male	36	35-39	
+573	1	Survived	1	"Flynn, Mr. John Irwin (""Irving"")"	Male	36	35-39	
+680	1	Survived	1	Cardeza, Mr. Thomas Drake Martinez	Male	36	35-39	
+249	1	Survived	1	Beckwith, Mr. Richard Leonard	Male	37	35-39	
+225	1	Survived	1	Hoyt, Mr. Frederick Maxfield	Male	38	35-39	
+401	1	Survived	3	Niskanen, Mr. Juha	Male	39	35-39	
+855	0	Not survived	2	Carter, Mrs. Ernest Courtenay (Lilian Hughes)	Female	44	40-44	
+41	0	Not survived	3	Ahlin, Mrs. Johan (Johanna Persdotter Larsson)	Female	40	40-44	
+255	0	Not survived	3	Rosblom, Mrs. Viktor (Helena Wilhelmina)	Female	41	40-44	
+639	0	Not survived	3	Panula, Mrs. Juha (Maria Emilia Ojala)	Female	41	40-44	
+679	0	Not survived	3	Goodwin, Mrs. Frederick (Augusta Tyler)	Female	43	40-44	
+320	1	Survived	1	Spedden, Mrs. Frederic Oakley (Margaretta Corning Stone)	Female	40	40-44	
+610	1	Survived	1	Shutes, Miss. Elizabeth W	Female	40	40-44	
+338	1	Survived	1	Burns, Miss. Elizabeth Margaret	Female	41	40-44	
+381	1	Survived	1	Bidois, Miss. Rosalie	Female	42	40-44	
+780	1	Survived	1	Robert, Mrs. Edward Scott (Elisabeth Walton McMillan)	Female	43	40-44	
+195	1	Survived	1	Brown, Mrs. James Joseph (Margaret Tobin)	Female	44	40-44	
+524	1	Survived	1	Hippach, Mrs. Louis Albert (Ida Sophia Fischer)	Female	44	40-44	
+162	1	Survived	2	"Watt, Mrs. James (Elizabeth ""Bessie"" Inglis Milne)"	Female	40	40-44	
+347	1	Survived	2	Smith, Miss. Marion Elsie	Female	40	40-44	
+671	1	Survived	2	Brown, Mrs. Thomas William Solomon (Elizabeth Catherine Ford)	Female	40	40-44	
+273	1	Survived	2	Mellinger, Mrs. (Elizabeth Anne Maidment)	Female	41	40-44	
+433	1	Survived	2	Louch, Mrs. Charles Alexander (Alice Adelaide Slow)	Female	42	40-44	
+866	1	Survived	2	Bystrom, Mrs. (Karolina)	Female	42	40-44	
+31	0	Not survived	1	Uruchurtu, Don. Manuel E	Male	40	40-44	
+264	0	Not survived	1	Harrison, Mr. William	Male	40	40-44	
+36	0	Not survived	1	Holverson, Mr. Alexander Oskar	Male	42	40-44	
+246	0	Not survived	1	Minahan, Dr. William Edward	Male	44	40-44	
+150	0	Not survived	2	Byles, Rev. Thomas Roussel Davids	Male	42	40-44	
+218	0	Not survived	2	Jacobsohn, Mr. Sidney Samuel	Male	42	40-44	
+315	0	Not survived	2	Hart, Mr. Benjamin	Male	43	40-44	
+237	0	Not survived	2	Hold, Mr. Stephen	Male	44	40-44	
+189	0	Not survived	3	Bourke, Mr. John	Male	40	40-44	
+361	0	Not survived	3	Skoog, Mr. Wilhelm	Male	40	40-44	
+562	0	Not survived	3	Sivic, Mr. Husein	Male	40	40-44	
+662	0	Not survived	3	Badt, Mr. Mohamed	Male	40	40-44	
+154	0	Not survived	3	van Billiard, Mr. Austin Blyler	Male	40.5	40-44	
+526	0	Not survived	3	Farrell, Mr. James	Male	40.5	40-44	
+762	0	Not survived	3	Nirva, Mr. Iisakki Antino Aijo	Male	41	40-44	
+861	0	Not survived	3	Hansen, Mr. Claus Peter	Male	41	40-44	
+198	0	Not survived	3	Olsen, Mr. Karl Siegwart Andreas	Male	42	40-44	
+350	0	Not survived	3	Dimic, Mr. Jovan	Male	42	40-44	
+700	0	Not survived	3	Humblen, Mr. Adolf Mathias Nicolai Olsen	Male	42	40-44	
+846	0	Not survived	3	Abbing, Mr. Anthony	Male	42	40-44	
+669	0	Not survived	3	Cook, Mr. Jacob	Male	43	40-44	
+819	0	Not survived	3	Holm, Mr. John Fredrik Alexander	Male	43	40-44	
+161	0	Not survived	3	Cribb, Mr. John Hatfield	Male	44	40-44	
+604	0	Not survived	3	Torber, Mr. Ernst William	Male	44	40-44	
+697	0	Not survived	3	Kelly, Mr. James	Male	44	40-44	
+210	1	Survived	1	Blank, Mr. Henry	Male	40	40-44	
+622	1	Survived	1	Kimball, Mr. Edwin Nelson Jr	Male	42	40-44	
+708	1	Survived	1	Calderhead, Mr. Edward Pennington	Male	42	40-44	
+289	1	Survived	2	Hosono, Mr. Masabumi	Male	42	40-44	
+415	1	Survived	3	Sundman, Mr. Johan Julian	Male	44	40-44	
+168	0	Not survived	3	Skoog, Mrs. William (Anna Bernhardina Karlsson)	Female	45	45-49	
+277	0	Not survived	3	Lindblom, Miss. Augusta Charlotta	Female	45	45-49	
+363	0	Not survived	3	Barbara, Mrs. (Catherine David)	Female	45	45-49	
+133	0	Not survived	3	Robins, Mrs. Alexander A (Grace Charity Laury)	Female	47	45-49	
+737	0	Not survived	3	Ford, Mrs. Edward (Margaret Ann Watson)	Female	48	45-49	
+857	1	Survived	1	Wick, Mrs. George Dennick (Mary Hitchcock)	Female	45	45-49	
+872	1	Survived	1	Beckwith, Mrs. Richard Leonard (Sallie Monypeny)	Female	47	45-49	
+557	1	Survived	1	"Duff Gordon, Lady. (Lucille Christiana Sutherland) (""Mrs Morgan"")"	Female	48	45-49	
+863	1	Survived	1	Swift, Mrs. Frederick Joel (Margaret Welles Barron)	Female	48	45-49	
+53	1	Survived	1	Harper, Mrs. Henry Sleeper (Myna Haxtun)	Female	49	45-49	
+797	1	Survived	1	Leader, Dr. Alice (Farnham)	Female	49	45-49	
+441	1	Survived	2	Hart, Mrs. Benjamin (Esther Ada Bloomfield)	Female	45	45-49	
+707	1	Survived	2	"Kelly, Mrs. Florence ""Fannie"""	Female	45	45-49	
+755	1	Survived	2	Herman, Mrs. Samuel (Jane Laver)	Female	48	45-49	
+63	0	Not survived	1	Harris, Mr. Henry Birkhardt	Male	45	45-49	
+340	0	Not survived	1	Blackwell, Mr. Stephen Weart	Male	45	45-49	
+537	0	Not survived	1	Butt, Major. Archibald Willingham	Male	45	45-49	
+332	0	Not survived	1	Partner, Mr. Austen	Male	45.5	45-49	
+93	0	Not survived	1	Chaffee, Mr. Herbert Fuller	Male	46	45-49	
+790	0	Not survived	1	Guggenheim, Mr. Benjamin	Male	46	45-49	
+111	0	Not survived	1	Porter, Mr. Walter Chamberlain	Male	47	45-49	
+463	0	Not survived	1	Gee, Mr. Arthur H	Male	47	45-49	
+516	0	Not survived	1	Walker, Mr. William Anderson	Male	47	45-49	
+663	0	Not survived	1	Colley, Mr. Edward Pomeroy	Male	47	45-49	
+699	0	Not survived	1	Thayer, Mr. John Borland	Male	49	45-49	
+398	0	Not survived	2	McKane, Mr. Peter David	Male	46	45-49	
+587	0	Not survived	2	Jarvis, Mr. John Denzil	Male	47	45-49	
+464	0	Not survived	2	Milling, Mr. Jacob Christian	Male	48	45-49	
+130	0	Not survived	3	Ekstrom, Mr. Johan	Male	45	45-49	
+204	0	Not survived	3	Youseff, Mr. Gerious	Male	45.5	45-49	
+593	0	Not survived	3	Elsbury, Mr. William James	Male	47	45-49	
+874	0	Not survived	3	Vander Cruyssen, Mr. Victor	Male	47	45-49	
+772	0	Not survived	3	Jensen, Mr. Niels Peder	Male	48	45-49	
+598	0	Not survived	3	Johnson, Mr. Alfred	Male	49	45-49	
+188	1	Survived	1	"Romaine, Mr. Charles Hallace (""Mr C Rolmane"")"	Male	45	45-49	
+461	1	Survived	1	Anderson, Mr. Harry	Male	48	45-49	
+646	1	Survived	1	Harper, Mr. Henry Sleeper	Male	48	45-49	
+713	1	Survived	1	Taylor, Mr. Elmer Zebley	Male	48	45-49	
+454	1	Survived	1	Goldenberg, Mr. Samuel L	Male	49	45-49	
+600	1	Survived	1	"Duff Gordon, Sir. Cosmo Edmund (""Mr Morgan"")"	Male	49	45-49	
+339	1	Survived	3	Dahl, Mr. Karl Edwart	Male	45	45-49	
+178	0	Not survived	1	Isham, Miss. Ann Elizabeth	Female	50	50-54	
+300	1	Survived	1	Baxter, Mrs. James (Helene DeLaudeniere Chaput)	Female	50	50-54	
+766	1	Survived	1	Hogeboom, Mrs. John C (Anna Andrews)	Female	51	50-54	
+592	1	Survived	1	Stephenson, Mrs. Walter Bertram (Martha Eustis)	Female	52	50-54	
+821	1	Survived	1	Hays, Mrs. Charles Melville (Clara Jennings Gregg)	Female	52	50-54	
+572	1	Survived	1	Appleton, Mrs. Edward Dale (Charlotte Lamson)	Female	53	50-54	
+497	1	Survived	1	Eustis, Miss. Elizabeth Mussey	Female	54	50-54	
+514	1	Survived	1	Rothschild, Mrs. Martin (Elizabeth L. Barrett)	Female	54	50-54	
+260	1	Survived	2	Parrish, Mrs. (Lutie Davis)	Female	50	50-54	
+459	1	Survived	2	Toomey, Miss. Ellen	Female	50	50-54	
+527	1	Survived	2	Ridsdale, Miss. Lucy	Female	50	50-54	
+775	1	Survived	2	Hocking, Mrs. Elizabeth (Eliza Needs)	Female	54	50-54	
+435	0	Not survived	1	Silvey, Mr. William Baird	Male	50	50-54	
+545	0	Not survived	1	Douglas, Mr. Walter Donald	Male	50	50-54	
+156	0	Not survived	1	Williams, Mr. Charles Duane	Male	51	50-54	
+263	0	Not survived	1	Taussig, Mr. Emil	Male	52	50-54	
+7	0	Not survived	1	McCarthy, Mr. Timothy J	Male	54	50-54	
+125	0	Not survived	1	White, Mr. Percival Wayland	Male	54	50-54	
+724	0	Not survived	2	Hodges, Mr. Henry Price	Male	50	50-54	
+151	0	Not survived	2	Bateman, Rev. Robert James	Male	51	50-54	
+696	0	Not survived	2	Chapman, Mr. Charles Henry	Male	52	50-54	
+715	0	Not survived	2	Greenberg, Mr. Samuel	Male	52	50-54	
+250	0	Not survived	2	Carter, Rev. Ernest Courtenay	Male	54	50-54	
+318	0	Not survived	2	Moraweck, Dr. Ernest	Male	54	50-54	
+583	0	Not survived	2	Downton, Mr. William James	Male	54	50-54	
+483	0	Not survived	3	Rouse, Mr. Richard Henry	Male	50	50-54	
+223	0	Not survived	3	Green, Mr. George Henry	Male	51	50-54	
+407	0	Not survived	3	Widegren, Mr. Carl/Charles Peter	Male	51	50-54	
+632	0	Not survived	3	Lundahl, Mr. Johan Svensson	Male	51	50-54	
+661	1	Survived	1	Frauenthal, Dr. Henry William	Male	50	50-54	
+858	1	Survived	1	Daly, Mr. Peter Denis 	Male	51	50-54	
+450	1	Survived	1	Peuchen, Major. Arthur Godfrey	Male	52	50-54	
+773	0	Not survived	2	Mack, Mrs. (Mary)	Female	57	55-59	
+880	1	Survived	1	Potter, Mrs. Thomas Jr (Lily Alexenia Wilson)	Female	56	55-59	
+12	1	Survived	1	Bonnell, Miss. Elizabeth	Female	58	55-59	
+196	1	Survived	1	Lurette, Miss. Elise	Female	58	55-59	
+269	1	Survived	1	Graham, Mrs. William Thompson (Edith Junkins)	Female	58	55-59	
+16	1	Survived	2	Hewlett, Mrs. (Mary D Kingcome) 	Female	55	55-59	
+493	0	Not survived	1	Molson, Mr. Harry Markland	Male	55	55-59	
+175	0	Not survived	1	Smith, Mr. James Clinch	Male	56	55-59	
+468	0	Not survived	1	Smart, Mr. John Montgomery	Male	56	55-59	
+488	0	Not survived	1	Kent, Mr. Edward Austin	Male	58	55-59	
+660	0	Not survived	1	Newell, Mr. Arthur Webster	Male	58	55-59	
+627	0	Not survived	2	Kirkland, Rev. Charles Leonard	Male	57	55-59	
+233	0	Not survived	2	Sjostedt, Mr. Ernst Adolf	Male	59	55-59	
+153	0	Not survived	3	Meo, Mr. Alfonzo	Male	55.5	55-59	
+95	0	Not survived	3	Coxon, Mr. Daniel	Male	59	55-59	
+648	1	Survived	1	Simonius-Blumer, Col. Oberst Alfons	Male	56	55-59	
+814	0	Not survived	3	Andersson, Miss. Ebba Iris Alfrida	Female	6	5-9	
+25	0	Not survived	3	Palsson, Miss. Torborg Danira	Female	8	5-9	
+148	0	Not survived	3	"Ford, Miss. Robina Maggie ""Ruby"""	Female	9	5-9	
+542	0	Not survived	3	Andersson, Miss. Ingeborg Constanzia	Female	9	5-9	
+635	0	Not survived	3	Skoog, Miss. Mabel	Female	9	5-9	
+853	0	Not survived	3	Boulos, Miss. Nourelain	Female	9	5-9	
+59	1	Survived	2	West, Miss. Constance Mirium	Female	5	5-9	
+721	1	Survived	2	"Harper, Miss. Annie Jessie ""Nina"""	Female	6	5-9	
+536	1	Survived	2	Hart, Miss. Eva Miriam	Female	7	5-9	
+238	1	Survived	2	"Collyer, Miss. Marjorie ""Lottie"""	Female	8	5-9	
+234	1	Survived	3	Asplund, Miss. Lillian Gertrud	Female	5	5-9	
+449	1	Survived	3	Baclini, Miss. Marie Catherine	Female	5	5-9	
+778	1	Survived	3	Emanuel, Miss. Virginia Ethel	Female	5	5-9	
+51	0	Not survived	3	Panula, Master. Juha Niilo	Male	7	5-9	
+279	0	Not survived	3	Rice, Master. Eric	Male	7	5-9	
+788	0	Not survived	3	Rice, Master. George Hugh	Male	8	5-9	
+183	0	Not survived	3	Asplund, Master. Clarence Gustaf Hugo	Male	9	5-9	
+481	0	Not survived	3	Goodwin, Master. Harold Victor	Male	9	5-9	
+550	1	Survived	2	Davies, Master. John Morgan Jr	Male	8	5-9	
+752	1	Survived	3	Moor, Master. Meier	Male	6	5-9	
+166	1	Survived	3	"Goldsmith, Master. Frank John William ""Frankie"""	Male	9	5-9	
+490	1	Survived	3	"Coutts, Master. Eden Leslie ""Neville"""	Male	9	5-9	
+367	1	Survived	1	Warren, Mrs. Frank Manley (Anna Sophia Atkinson)	Female	60	60+	
+830	1	Survived	1	Stone, Mrs. George Nelson (Martha Evelyn)	Female	62	60+	
+276	1	Survived	1	Andrews, Miss. Kornelia Theodosia	Female	63	60+	
+484	1	Survived	3	Turkula, Mrs. (Hedwig)	Female	63	60+	
+695	0	Not survived	1	Weir, Col. John	Male	60	60+	
+171	0	Not survived	1	Van der hoef, Mr. Wyckoff	Male	61	60+	
+626	0	Not survived	1	Sutton, Mr. Frederick	Male	61	60+	
+253	0	Not survived	1	Stead, Mr. William Thomas	Male	62	60+	
+556	0	Not survived	1	Wright, Mr. George	Male	62	60+	
+439	0	Not survived	1	Fortune, Mr. Mark	Male	64	60+	
+546	0	Not survived	1	Nicholson, Mr. Arthur Ernest	Male	64	60+	
+55	0	Not survived	1	Ostby, Mr. Engelhart Cornelius	Male	65	60+	
+457	0	Not survived	1	Millet, Mr. Francis Davis	Male	65	60+	
+746	0	Not survived	1	Crosby, Capt. Edward Gifford	Male	70	60+	
+97	0	Not survived	1	Goldschmidt, Mr. George B	Male	71	60+	
+494	0	Not survived	1	Artagaveytia, Mr. Ramon	Male	71	60+	
+685	0	Not survived	2	Brown, Mr. Thomas William Solomon	Male	60	60+	
+34	0	Not survived	2	Wheadon, Mr. Edward H	Male	66	60+	
+673	0	Not survived	2	Mitchell, Mr. Henry Michael	Male	70	60+	
+327	0	Not survived	3	Nysveen, Mr. Johan Hansen	Male	61	60+	
+281	0	Not survived	3	Duane, Mr. Frank	Male	65	60+	
+117	0	Not survived	3	Connors, Mr. Patrick	Male	70.5	60+	
+852	0	Not survived	3	Svensson, Mr. Johan	Male	74	60+	
+588	1	Survived	1	Frolicher-Stehli, Mr. Maxmillian	Male	60	60+	
+631	1	Survived	1	Barkworth, Mr. Algernon Henry Wilson	Male	80	60+	
+571	1	Survived	2	Harris, Mr. George	Male	62	60+	
+141	0	Not survived	3	Boulos, Mrs. Joseph (Sultana)	Female	N/A	N/A	
+181	0	Not survived	3	Sage, Miss. Constance Gladys	Female	N/A	N/A	
+230	0	Not survived	3	Lefebre, Miss. Mathilde	Female	N/A	N/A	
+236	0	Not survived	3	Harknett, Miss. Alice Phoebe	Female	N/A	N/A	
+241	0	Not survived	3	Zabour, Miss. Thamine	Female	N/A	N/A	
+265	0	Not survived	3	Henry, Miss. Delia	Female	N/A	N/A	
+410	0	Not survived	3	Lefebre, Miss. Ida	Female	N/A	N/A	
+416	0	Not survived	3	Meek, Mrs. Thomas (Annie Louise Rowley)	Female	N/A	N/A	
+486	0	Not survived	3	Lefebre, Miss. Jeannie	Female	N/A	N/A	
+503	0	Not survived	3	O'Sullivan, Miss. Bridget Mary	Female	N/A	N/A	
+565	0	Not survived	3	Meanwell, Miss. (Marion Ogden)	Female	N/A	N/A	
+579	0	Not survived	3	Caram, Mrs. Joseph (Maria Elias)	Female	N/A	N/A	
+594	0	Not survived	3	Bourke, Miss. Mary	Female	N/A	N/A	
+681	0	Not survived	3	Peters, Miss. Katie	Female	N/A	N/A	
+793	0	Not survived	3	Sage, Miss. Stella Anna	Female	N/A	N/A	
+864	0	Not survived	3	"Sage, Miss. Dorothy Edith ""Dolly"""	Female	N/A	N/A	
+889	0	Not survived	3	"Johnston, Miss. Catherine Helen ""Carrie"""	Female	N/A	N/A	
+32	1	Survived	1	Spencer, Mrs. William Augustus (Marie Eugenie)	Female	N/A	N/A	
+167	1	Survived	1	Chibnall, Mrs. (Edith Martha Bowerman)	Female	N/A	N/A	
+257	1	Survived	1	Thorne, Mrs. Gertrude Maybelle	Female	N/A	N/A	
+307	1	Survived	1	Fleming, Miss. Margaret	Female	N/A	N/A	
+335	1	Survived	1	Frauenthal, Mrs. Henry William (Clara Heinsheimer)	Female	N/A	N/A	
+376	1	Survived	1	Meyer, Mrs. Edgar Joseph (Leila Saks)	Female	N/A	N/A	
+458	1	Survived	1	Kenyon, Mrs. Frederick R (Marion)	Female	N/A	N/A	
+670	1	Survived	1	Taylor, Mrs. Elmer Zebley (Juliet Cummins Wright)	Female	N/A	N/A	
+850	1	Survived	1	Goldenberg, Mrs. Samuel L (Edwiga Grabowska)	Female	N/A	N/A	
+304	1	Survived	2	Keane, Miss. Nora A	Female	N/A	N/A	
+597	1	Survived	2	Leitch, Miss. Jessie Wills	Female	N/A	N/A	
+20	1	Survived	3	Masselmani, Mrs. Fatima	Female	N/A	N/A	
+29	1	Survived	3	"O'Dwyer, Miss. Ellen ""Nellie"""	Female	N/A	N/A	
+33	1	Survived	3	Glynn, Miss. Mary Agatha	Female	N/A	N/A	
+48	1	Survived	3	O'Driscoll, Miss. Bridget	Female	N/A	N/A	
+83	1	Survived	3	McDermott, Miss. Brigdet Delia	Female	N/A	N/A	
+110	1	Survived	3	Moran, Miss. Bertha	Female	N/A	N/A	
+129	1	Survived	3	Peter, Miss. Anna	Female	N/A	N/A	
+187	1	Survived	3	"O'Brien, Mrs. Thomas (Johanna ""Hannah"" Godfrey)"	Female	N/A	N/A	
+199	1	Survived	3	"Madigan, Miss. Margaret ""Maggie"""	Female	N/A	N/A	
+242	1	Survived	3	"Murphy, Miss. Katherine ""Kate"""	Female	N/A	N/A	
+275	1	Survived	3	"Healy, Miss. Hanora ""Nora"""	Female	N/A	N/A	
+301	1	Survived	3	"Kelly, Miss. Anna Katherine ""Annie Kate"""	Female	N/A	N/A	
+331	1	Survived	3	McCoy, Miss. Agnes	Female	N/A	N/A	
+348	1	Survived	3	Davison, Mrs. Thomas Henry (Mary E Finck)	Female	N/A	N/A	
+359	1	Survived	3	McGovern, Miss. Mary	Female	N/A	N/A	
+360	1	Survived	3	"Mockler, Miss. Helen Mary ""Ellie"""	Female	N/A	N/A	
+368	1	Survived	3	Moussa, Mrs. (Mantoura Boulos)	Female	N/A	N/A	
+369	1	Survived	3	Jermyn, Miss. Annie	Female	N/A	N/A	
+432	1	Survived	3	Thorneycroft, Mrs. Percival (Florence Kate White)	Female	N/A	N/A	
+534	1	Survived	3	Peter, Mrs. Catherine (Catherine Rizk)	Female	N/A	N/A	
+574	1	Survived	3	Kelly, Miss. Mary	Female	N/A	N/A	
+613	1	Survived	3	Murphy, Miss. Margaret Jane	Female	N/A	N/A	
+654	1	Survived	3	"O'Leary, Miss. Hanora ""Norah"""	Female	N/A	N/A	
+698	1	Survived	3	"Mullens, Miss. Katherine ""Katie"""	Female	N/A	N/A	
+728	1	Survived	3	Mannion, Miss. Margareth	Female	N/A	N/A	
+65	0	Not survived	1	Stewart, Mr. Albert A	Male	N/A	N/A	
+169	0	Not survived	1	Baumann, Mr. John D	Male	N/A	N/A	
+186	0	Not survived	1	Rood, Mr. Hugh Roscoe	Male	N/A	N/A	
+271	0	Not survived	1	Cairns, Mr. Alexander	Male	N/A	N/A	
+285	0	Not survived	1	Smith, Mr. Richard William	Male	N/A	N/A	
+296	0	Not survived	1	Lewy, Mr. Ervin G	Male	N/A	N/A	
+352	0	Not survived	1	Williams-Lambert, Mr. Fletcher Fellows	Male	N/A	N/A	
+476	0	Not survived	1	Clifford, Mr. George Quincy	Male	N/A	N/A	
+528	0	Not survived	1	Farthing, Mr. John	Male	N/A	N/A	
+558	0	Not survived	1	Robbins, Mr. Victor	Male	N/A	N/A	
+603	0	Not survived	1	Harrington, Mr. Charles H	Male	N/A	N/A	
+634	0	Not survived	1	Parr, Mr. William Henry Marsh	Male	N/A	N/A	
+712	0	Not survived	1	Klaber, Mr. Herman	Male	N/A	N/A	
+767	0	Not survived	1	Brewe, Dr. Arthur Jackson	Male	N/A	N/A	
+794	0	Not survived	1	Hoyt, Mr. William Fisher	Male	N/A	N/A	
+816	0	Not survived	1	Fry, Mr. Richard	Male	N/A	N/A	
+182	0	Not survived	2	Pernot, Mr. Rene	Male	N/A	N/A	
+278	0	Not survived	2	"Parkes, Mr. Francis ""Frank"""	Male	N/A	N/A	
+414	0	Not survived	2	Cunningham, Mr. Alfred Fleming	Male	N/A	N/A	
+467	0	Not survived	2	Campbell, Mr. William	Male	N/A	N/A	
+482	0	Not survived	2	"Frost, Mr. Anthony Wood ""Archie"""	Male	N/A	N/A	
+675	0	Not survived	2	Watson, Mr. Ennis Hastings	Male	N/A	N/A	
+733	0	Not survived	2	Knight, Mr. Robert J	Male	N/A	N/A	
+6	0	Not survived	3	Moran, Mr. James	Male	N/A	N/A	
+27	0	Not survived	3	Emir, Mr. Farred Chehab	Male	N/A	N/A	
+30	0	Not survived	3	Todoroff, Mr. Lalio	Male	N/A	N/A	
+43	0	Not survived	3	Kraeff, Mr. Theodor	Male	N/A	N/A	
+46	0	Not survived	3	Rogers, Mr. William John	Male	N/A	N/A	
+47	0	Not survived	3	Lennon, Mr. Denis	Male	N/A	N/A	
+49	0	Not survived	3	Samaan, Mr. Youssef	Male	N/A	N/A	
+77	0	Not survived	3	Staneff, Mr. Ivan	Male	N/A	N/A	
+78	0	Not survived	3	Moutal, Mr. Rahamin Haim	Male	N/A	N/A	
+88	0	Not survived	3	Slocovski, Mr. Selman Francis	Male	N/A	N/A	
+96	0	Not survived	3	Shorney, Mr. Charles Joseph	Male	N/A	N/A	
+102	0	Not survived	3	"Petroff, Mr. Pastcho (""Pentcho"")"	Male	N/A	N/A	
+122	0	Not survived	3	Moore, Mr. Leonard Charles	Male	N/A	N/A	
+127	0	Not survived	3	McMahon, Mr. Martin	Male	N/A	N/A	
+155	0	Not survived	3	Olsen, Mr. Ole Martin	Male	N/A	N/A	
+159	0	Not survived	3	Smiljanic, Mr. Mile	Male	N/A	N/A	
+160	0	Not survived	3	Sage, Master. Thomas Henry	Male	N/A	N/A	
+177	0	Not survived	3	Lefebre, Master. Henry Forbes	Male	N/A	N/A	
+197	0	Not survived	3	Mernagh, Mr. Robert	Male	N/A	N/A	
+202	0	Not survived	3	Sage, Mr. Frederick	Male	N/A	N/A	
+215	0	Not survived	3	Kiernan, Mr. Philip	Male	N/A	N/A	
+224	0	Not survived	3	Nenkoff, Mr. Christo	Male	N/A	N/A	
+251	0	Not survived	3	Reed, Mr. James George	Male	N/A	N/A	
+261	0	Not survived	3	Smith, Mr. Thomas	Male	N/A	N/A	
+305	0	Not survived	3	"Williams, Mr. Howard Hugh ""Harry"""	Male	N/A	N/A	
+325	0	Not survived	3	Sage, Mr. George John Jr	Male	N/A	N/A	
+336	0	Not survived	3	Denkoff, Mr. Mitto	Male	N/A	N/A	
+355	0	Not survived	3	Yousif, Mr. Wazli	Male	N/A	N/A	
+365	0	Not survived	3	O'Brien, Mr. Thomas	Male	N/A	N/A	
+385	0	Not survived	3	Plotcharsky, Mr. Vasil	Male	N/A	N/A	
+389	0	Not survived	3	Sadlier, Mr. Matthew	Male	N/A	N/A	
+411	0	Not survived	3	Sdycoff, Mr. Todor	Male	N/A	N/A	
+412	0	Not survived	3	Hart, Mr. Henry	Male	N/A	N/A	
+421	0	Not survived	3	Gheorgheff, Mr. Stanio	Male	N/A	N/A	
+426	0	Not survived	3	Wiseman, Mr. Phillippe	Male	N/A	N/A	
+429	0	Not survived	3	Flynn, Mr. James	Male	N/A	N/A	
+452	0	Not survived	3	Hagland, Mr. Ingvald Olai Olsen	Male	N/A	N/A	
+455	0	Not survived	3	Peduzzi, Mr. Joseph	Male	N/A	N/A	
+460	0	Not survived	3	O'Connor, Mr. Maurice	Male	N/A	N/A	
+465	0	Not survived	3	Maisner, Mr. Simon	Male	N/A	N/A	
+469	0	Not survived	3	Scanlan, Mr. James	Male	N/A	N/A	
+471	0	Not survived	3	Keefe, Mr. Arthur	Male	N/A	N/A	
+491	0	Not survived	3	Hagland, Mr. Konrad Mathias Reiersen	Male	N/A	N/A	
+496	0	Not survived	3	Yousseff, Mr. Gerious	Male	N/A	N/A	
+498	0	Not survived	3	Shellard, Mr. Frederick William	Male	N/A	N/A	
+512	0	Not survived	3	Webber, Mr. James	Male	N/A	N/A	
+518	0	Not survived	3	Ryan, Mr. Patrick	Male	N/A	N/A	
+523	0	Not survived	3	Lahoud, Mr. Sarkis	Male	N/A	N/A	
+525	0	Not survived	3	Kassem, Mr. Fared	Male	N/A	N/A	
+532	0	Not survived	3	Toufik, Mr. Nakli	Male	N/A	N/A	
+539	0	Not survived	3	Risien, Mr. Samuel Beard	Male	N/A	N/A	
+553	0	Not survived	3	O'Brien, Mr. Timothy	Male	N/A	N/A	
+561	0	Not survived	3	Morrow, Mr. Thomas Rowan	Male	N/A	N/A	
+564	0	Not survived	3	Simmons, Mr. John	Male	N/A	N/A	
+569	0	Not survived	3	Doharr, Mr. Tannous	Male	N/A	N/A	
+585	0	Not survived	3	Paulner, Mr. Uscher	Male	N/A	N/A	
+590	0	Not survived	3	Murdlin, Mr. Joseph	Male	N/A	N/A	
+599	0	Not survived	3	Boulos, Mr. Hanna	Male	N/A	N/A	
+602	0	Not survived	3	Slabenoff, Mr. Petco	Male	N/A	N/A	
+612	0	Not survived	3	Jardin, Mr. Jose Neto	Male	N/A	N/A	
+614	0	Not survived	3	Horgan, Mr. John	Male	N/A	N/A	
+630	0	Not survived	3	O'Connell, Mr. Patrick D	Male	N/A	N/A	
+640	0	Not survived	3	Thorneycroft, Mr. Percival	Male	N/A	N/A	
+649	0	Not survived	3	Willey, Mr. Edward	Male	N/A	N/A	
+651	0	Not survived	3	Mitkoff, Mr. Mito	Male	N/A	N/A	
+657	0	Not survived	3	Radeff, Mr. Alexander	Male	N/A	N/A	
+668	0	Not survived	3	Rommetvedt, Mr. Knud Paust	Male	N/A	N/A	
+719	0	Not survived	3	McEvoy, Mr. Michael	Male	N/A	N/A	
+739	0	Not survived	3	Ivanoff, Mr. Kanio	Male	N/A	N/A	
+740	0	Not survived	3	Nankoff, Mr. Minko	Male	N/A	N/A	
+761	0	Not survived	3	Garfirth, Mr. John	Male	N/A	N/A	
+769	0	Not survived	3	Moran, Mr. Daniel J	Male	N/A	N/A	
+774	0	Not survived	3	Elias, Mr. Dibo	Male	N/A	N/A	
+777	0	Not survived	3	Tobin, Mr. Roger	Male	N/A	N/A	
+779	0	Not survived	3	Kilgannon, Mr. Thomas J	Male	N/A	N/A	
+784	0	Not survived	3	Johnston, Mr. Andrew G	Male	N/A	N/A	
+791	0	Not survived	3	"Keane, Mr. Andrew ""Andy"""	Male	N/A	N/A	
+826	0	Not survived	3	Flynn, Mr. John	Male	N/A	N/A	
+827	0	Not survived	3	Lam, Mr. Len	Male	N/A	N/A	
+833	0	Not survived	3	Saad, Mr. Amin	Male	N/A	N/A	
+838	0	Not survived	3	Sirota, Mr. Maurice	Male	N/A	N/A	
+847	0	Not survived	3	Sage, Mr. Douglas Bullen	Male	N/A	N/A	
+860	0	Not survived	3	Razi, Mr. Raihed	Male	N/A	N/A	
+869	0	Not survived	3	van Melkebeke, Mr. Philemon	Male	N/A	N/A	
+879	0	Not survived	3	Laleff, Mr. Kristo	Male	N/A	N/A	
+56	1	Survived	1	Woolner, Mr. Hugh	Male	N/A	N/A	
+299	1	Survived	1	Saalfeld, Mr. Adolphe	Male	N/A	N/A	
+508	1	Survived	1	"Bradley, Mr. George (""George Arthur Brayton"")"	Male	N/A	N/A	
+741	1	Survived	1	Hawksford, Mr. Walter James	Male	N/A	N/A	
+840	1	Survived	1	Marechal, Mr. Pierre	Male	N/A	N/A	
+18	1	Survived	2	Williams, Mr. Charles Eugene	Male	N/A	N/A	
+548	1	Survived	2	Padro y Manent, Mr. Julian	Male	N/A	N/A	
+37	1	Survived	3	Mamee, Mr. Hanna	Male	N/A	N/A	
+66	1	Survived	3	Moubarek, Master. Gerios	Male	N/A	N/A	
+108	1	Survived	3	Moss, Mr. Albert Johan	Male	N/A	N/A	
+302	1	Survived	3	McCoy, Mr. Bernard	Male	N/A	N/A	
+445	1	Survived	3	Johannesen-Bratthammer, Mr. Bernt	Male	N/A	N/A	
+644	1	Survived	3	Foo, Mr. Choong	Male	N/A	N/A	
+693	1	Survived	3	Lam, Mr. Ali	Male	N/A	N/A	
+710	1	Survived	3	"Moubarek, Master. Halim Gonios (""William George"")"	Male	N/A	N/A	
+829	1	Survived	3	McCormack, Mr. Thomas Joseph	Male	N/A	N/A	

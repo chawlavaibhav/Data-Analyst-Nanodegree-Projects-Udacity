@@ -1,0 +1,599 @@
+VAIBHAV CHAWLA
+========================================================
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, packages}
+# Load all of the packages that you end up using
+# in your analysis in this code chunk.
+
+# Notice that the parameter "echo" was set to FALSE for this code chunk.
+# This prevents the code from displaying in the knitted HTML output.
+# You should set echo=FALSE for all code chunks in your file.
+library(dplyr)
+library(ggplot2)
+library(psych)
+library(scatterplot3d)
+```
+
+```{r echo=FALSE, Load_the_Data}
+# Load the Data
+df <- read.csv("wineQualityReds.csv",sep = ",")
+```
+#INTRODUCTION:
+The given dataset has data of around 1599 red-wines samples with 
+13 variables("X","fixed.acidity","volatile.acidity","citric.acid",
+"residual.sugar","chlorides","free.sulfur.dioxide","total.sulfur.dioxide",
+"density","pH","sulphates","alcohol","quality)
+Summary of the dataset shows that "x" is a count variables and there are some 
+intersting features to explore in the dataset like the quality of red-wine and 
+may be after analysis, we can comment upon the factors that control the quality
+of red-wine.
+```{r echo=FALSE}
+summary(df)
+```
+
+
+# Univariate Plots Section
+```{r echo=FALSE, Univariate_Plots}
+qplot(x= as.factor(quality), data= df, geom = "bar")
+```
+
+
+Quality is an ordered factor variable most of the red whines in the data 
+belong to quality 5 followed by quality 6. Higher quality red wines are less 
+frequent as suggested by plot. 
+
+
+```{r echo=FALSE}
+qplot(x= alcohol, data= df, bins = 50)
+```
+
+
+Mostly alcohol content values lies b/w 9 and 10.5 and a peak, around at an 
+alcohol content of 9.5. Also, there are some outliers towards higher alcohol 
+content and a few at lower side. 
+
+```{r echo=FALSE}
+qplot(x= pH, data= df, bins = 100)
+```
+
+
+pH distribution is normal with very few outliers. 
+Large chunk of red wines have pH values in the range (3.2-.3.3).
+```{r echo=FALSE}
+summary(df$pH)
+subset(df,df$pH >4)
+
+```
+
+
+In the plot, there are some data points at extreme right. 
+So, I checked them with a R-code to filter the data having ph>4. 
+```{r echo=FALSE}
+qplot(x= density, data= df, bins = 70)
+```
+
+
+Distribution of density is normal with few outliers.
+
+
+```{r echo=FALSE}
+qplot(x = volatile.acidity, data= df, bins= 80)
+```
+
+We need to use log scale in this case. 
+
+```{r echo=FALSE}
+qplot(x= volatile.acidity, data= df, bins= 80)+ scale_x_log10()
+```
+
+
+log(volatile acidity) has somewhat normal distribution.
+A little cleaning of data will give a better plot.
+
+```{r echo=FALSE}
+qplot(x= fixed.acidity, data= df, bins = 70)
+```
+
+Here, we again need to use log transformation on our x-axis.
+
+```{r echo=FALSE}
+qplot(x= fixed.acidity, data= df, bins = 70)+scale_x_log10()
+```
+
+
+Distribution of fixed.acidity. 
+I have used a log scale and it appears that the distribution is somewhat normal.
+
+```{r echo=FALSE}
+qplot(x= sqrt(residual.sugar), data= df, bins= 80,)
+```
+
+
+I have used a sqrt scale on x-axis. 
+A large chunk of data is concentrated towards the left with a long tail
+towards higher residual sugar levels. 
+
+```{r echo=FALSE}
+qplot(x= citric.acid, data= df, bins= 80,)
+```
+
+The distribution is skewed. Lets see the plot after axis transformation.
+
+```{r echo=FALSE}
+qplot(x= citric.acid, data= df, bins= 80,)+scale_x_sqrt()
+```
+
+
+Distribution is a bit bimodal in nature.
+But, a lot of data values are absent in between.
+
+```{r echo=FALSE}
+qplot(x= sulphates, data= df, bins= 80)
+```
+
+
+Lets use log scale on x-axis.
+
+```{r echo=FALSE}
+qplot(x= sulphates, data= df, bins= 80)+scale_x_log10()
+```
+
+
+Again data is somewhat normally distributed with few ouliers that can be
+removed to get a better plot.
+```{r echo=FALSE}
+qplot(x= total.sulfur.dioxide, data= df, bins= 80)
+```
+
+
+The data is highly skewed towards left. We need to use log scale.
+
+```{r echo=FALSE}
+qplot(x= total.sulfur.dioxide, data= df, bins= 80)+ scale_x_log10()
+```
+
+
+I have used log scale to even the distribution which was previously 
+skewed towards left.
+
+```{r echo=FALSE}
+qplot(x= chlorides, data= df, bins= 80)
+```
+
+Graph without log scale
+
+
+```{r echo=FALSE}
+qplot(x= chlorides, data= df, bins= 80)+scale_x_log10()
+```
+
+
+I have plotted chloride content on a log-scale.
+Distribution is normal with some outliers scattered around higher
+chloride content.
+
+# Univariate Analysis
+
+### What is the structure of your dataset?
+The dataset(1599X13) contains information of 1599 red-wines with 13 variables
+("X","fixed.acidity","volatile.acidity","citric.acid","residual.sugar",
+"chlorides","free.sulfur.dioxide","total.sulfur.dioxide","density","pH",
+"sulphates","alcohol","quality).
+"x" is a count variable.
+"Quality is an ordered factor variable with lowest quality being 3 and
+heighest being 8.           
+            
+### What is/are the main feature(s) of interest in your dataset?
+I would really like to work out the relationahip between quality and alcohol
+content of red wines.
+Does higher quality red wines have higher alcohol content or not. 
+Also the variation of pH with alcohol content. 
+
+### What other features in the dataset do you think will help support your 
+###investigation into your feature(s) of interest?
+What holds the control over pH of red wines i.e. free.sulhur.dioxide, 
+volatile.acidity, sulphates or alcoho.
+Also, variation of parameters in quality 5 and 6(most counts). 
+What features have strong co-relations.
+And, variation of density with quality.
+
+### Did you create any new variables from existing variables in the dataset?
+No, I didn't create any new variables from existing variables in the dataset. 
+But, I converted quality into 3 groups i.e. 3-5, 5-7,7-9.
+And, grouped parameters by quality and then summarised parameters in the 
+quality group (5-7). 
+
+### Of the features you investigated, were there any unusual distributions? 
+###Did you perform any operations on the data to tidy, adjust, or change the
+###form of the data? If so, why did you do this?
+I used log scale and sqrt scale in univariate plots to obtain somewhat
+normal distribution.
+
+
+# Bivariate Plots Section
+```{r echo=FALSE, Bivariate_Plots}
+ggplot(aes(x= as.factor(quality), y=pH), data= df)+geom_boxplot()
+```
+
+
+It is evident from the plot that pH varies alot with quality 
+and there is no strong relation indicated by the plot.
+Also, thereare some outliers present in the data.
+Below is the correlation test by pearson method.
+
+```{r echo=FALSE}
+cor.test(df$pH,df$quality, method = "pearson")
+```
+ There is no strong correlation b/w pH and quality.
+ Lets summarise pH variation with quality of alcohol.
+```{r echo=FALSE}
+describeBy(df$pH, group= df$quality, mat= TRUE)
+``` 
+ 
+ 
+ The summary stats show that the mean pH varies b/w 3.26-3.40. 
+ Also, mean pH is decreasing with increase in quality of red wines. 
+ 
+```{r echo=FALSE}
+ggplot(aes(x= quality, y= alcohol), data= df)+geom_jitter(alpha= 0.6)+
+  geom_line(stat= "summary", fun.y =mean, linetype =2, color = 'blue')+
+  geom_line(stat= "summary", fun.y = quantile, fun.args = list(probs = .9)
+            ,color= "blue")
+```
+
+
+Plot between alcohol content and quality.
+Though for each quality of red-wine there is a fair variation of alcohol content
+but,the plot suggests that mean alcohol content is increasing with quality. 
+The alocohol content dips from quality 4 to quality 5.
+Lets check how much they are correlated !
+
+```{r echo=FALSE}
+cor.test(df$alcohol,df$quality, method = "pearson")
+```
+
+
+Pearson's r is 0.47>0.3. 
+So, we can say that, there is moderately strong coorelation b/w alcohol content
+and quality of alcohol.
+Lets summarise alcohol content with quality of red wine.
+```{r echo=FALSE}
+describeBy(df$alcohol, group= df$quality, mat= TRUE)
+``` 
+
+
+As, suggested by the correlation plot, mean alcohol content increases with 
+increase in quality of red wine. 
+```{r echo=FALSE}
+ggplot(aes(x= quality, y= density), data= df)+geom_jitter(alpha= 0.55)+
+  geom_line(stat= "summary", fun.y =mean, linetype =2, color = 'blue')+
+  geom_line(stat= "summary", fun.y = quantile, fun.args = list(probs = .9),
+            color= "blue")
+```
+
+
+Density is decreasing initially but then it increases with increasing quality 
+for a while only to fall again with quality
+From the plot, it does not appears that the two parameters are much correlated.  
+Lets check it statistically!
+```{r echo=FALSE}
+cor.test(df$density,df$quality, method = "pearson")
+```
+
+
+ correlation is not quite relevant.A weak negative correlation isn't much of
+ interest.
+ Lets summarise density distribution with quality.
+ 
+```{r echo=FALSE}
+describeBy(df$density, group= df$quality, mat= TRUE)
+``` 
+
+
+Mean density varies from .995 to .997.
+
+```{r echo=FALSE}
+ggplot(aes(x= quality, y= volatile.acidity), data= df)+geom_jitter(alpha= 0.55)+
+  geom_line(stat= "summary", fun.y =mean, linetype =2, color = 'blue')+
+  geom_line(stat= "summary", fun.y = quantile, fun.args = list(probs = .9),
+            color= "blue")
+```
+
+
+It appears from the plot that, as quality of red wine increases, 
+volatile acidity decreases. 
+Lets check the pearson's r.
+
+```{r echo=FALSE}
+cor.test(df$volatile.acidity,df$quality, method = "pearson")
+```
+Yes, a negative moderately strong correlation b/w the two parameters is observed.
+Lets summarise this variation.
+```{r echo=FALSE}
+describeBy(df$volatile.acidity, group= df$quality, mat= TRUE)
+```
+
+
+Mean value of volatile acidity varies b/w 0.40-0.89.
+Standard deviation is quite small too.
+
+```{r echo=FALSE}
+ggplot(aes(x= alcohol, y= pH), data= df)+geom_point()
+```
+
+
+Distribution of pH vs alcohol is widely scattred.
+plot suggests that alcohol content doesn't control pH of red wines.
+Quite interesting !
+
+```{r echo=FALSE}
+cor.test(df$pH,df$alcohol, method = "pearson")
+```
+
+
+As evident from the plot and  from a very small value of pearson's "r", 
+correlation is very weak.
+
+```{r echo=FALSE}
+
+ggplot(aes(x= alcohol, y= density), data= df)+geom_point()
+```
+
+
+It appears that there is a negative relation b/w the two parameters.
+However, data is quite scattered.
+Lets check our assumption!
+```{r echo=FALSE}
+cor.test(df$density,df$alcohol, method = "pearson")
+```
+
+Wow! A negative correlation.
+
+```{r echo=FALSE}
+ggplot(aes(x= pH, y= fixed.acidity), data= df)+geom_point()+
+geom_line(stat= "summary", fun.y =mean, linetype =2, color = 'blue')
+```
+
+
+The plot suggests strongly negative correlation b/w pH and fixed acidity. 
+Lets confirm it with pearson's r !
+```{r echo=FALSE}
+cor.test(df$fixed.acidity,df$pH, method = "pearson")
+```
+
+
+Strong ngative co-relation b/w the two parameters.
+
+```{r echo=FALSE}
+ggplot(aes(y= pH, x= citric.acid), data= df)+geom_point()
+```
+
+
+Lets check the correlation.
+
+```{r echo=FALSE}
+cor.test(df$pH,df$citric.acid, method = "pearson")
+```
+
+
+A moderately strong but negative correlation.
+
+# Bivariate Analysis
+
+### Talk about some of the relationships you observed in this part of the 
+###investigation. How did the feature(s) of interest vary with other features 
+###in the dataset?
+ I was interested in studying the relationship b/w alcohol content and 
+ quality of red wines.
+ From the plot as well as from pearson's r, the two parameters have quite 
+ strong correlation b/w them.
+ Mean alcohol content increases with the quality of red wines. 
+ Quality isn't strongly related to pH or density but related with 
+ volatile acidity.
+ Alcohol content varied widely with pH but negatively related with density.
+ 
+### Did you observe any interesting relationships between the other features
+###(not the main feature(s) of interest)?
+Also, before analysis I thought that alcohol content and pH would be correlated
+but surprisingly fixed.acidity controls the pH.
+The relationship between fixed.acidity and pH is quite strong too.
+
+### What was the strongest relationship you found?
+Fixed.acidity and pH
+
+# Multivariate Plots Section
+```{r}
+breaks <- c( 3,4,6,9 )
+df$quality.group <-cut(df$quality,breaks)
+quality_group<-group_by(df,quality.group)
+df.group <-summarise(quality_group,mean_alcohol =mean(alcohol),mean_pH= mean(pH),
+                     mean_fixed.acidity= mean(fixed.acidity),
+                     mean_volatile.acidity= mean(volatile.acidity),
+                     mean_density= mean(density),n= n())
+head(df.group)
+```
+
+
+I divided the data according to quality to get the mean values of parameters
+that belong to various quality ranges.In the interset group variation of 
+parameters is as follows 
+Mean pH = 3.311296
+mean alcohol = 10.252
+mean fixed acidity = 8.254
+Mean volatile acidity = 0.5385
+Mean Density =0.99686
+NA value group isn't useful for us.
+
+```{r echo=FALSE}
+shapes = c(15,16,17) 
+shapes<- shapes[as.numeric(df$quality.group)]
+colorcb = c("red","cyan","green")
+colorcb<-colorcb[as.numeric(df$quality.group)]
+with(df, {
+  scatterplot3d(density,alcohol,volatile.acidity, pch = shapes,
+                color = colorcb,angle= 65)
+  })
+```
+
+
+I have created a 3D plot between density, volatile acidity and alcohol content.
+I have used the quality group created above to colour code the data according
+to quality.
+
+```{r echo=FALSE}
+ggplot(data =df, aes(x=volatile.acidity, y=sulphates, size = alcohol, 
+                color=factor(df$quality))) + geom_point()
+```
+
+
+It looks like the higher quality red wines tend to be concentrated in the top
+left of the plot. This tends to be where the higher alcohol content 
+(larger dots) are concentrated as well.
+
+```{r echo= FALSE}
+ggplot(data = df , aes(x = sulphates, y = alcohol,colour=factor(df$quality))) + 
+  geom_density2d(bins=2) + scale_color_brewer() + 
+  geom_point(color="black", alpha=0.1) 
+```
+
+
+Summarising quality using a contour plot of alcohol and sulphate content.
+Higher quality red wines are generally located near the upper right of the
+scatter plot (darker contour lines) wheras lower quality red wines are 
+generally located in the bottom right.
+
+
+```{r echo=FALSE}
+ggplot(aes(x= alcohol, y= density), data= df)+
+geom_line(aes(color= quality.group),stat= "summary", fun.y =median)
+```
+
+
+I have plotted alcohol content and density with quality to see the
+relation b/w the three parameters.
+
+# Multivariate Analysis
+
+### Talk about some of the relationships you observed in this part of 
+###the investigation. Were there features that strengthened each other
+###in terms of looking at your feature(s) of interest?
+
+The  3D scatter plot and lineplot shows the relation b/w 2 or more parameters as 
+a function of quality of red wines.
+
+Summarising quality using a contour plot of alcohol and sulphate content.
+Higher quality red wines are generally located near the upper right of the
+scatter plot (darker contour lines) wheras lower quality red wines are 
+generally located in the bottom right.
+
+### Average value of parameters with quality.
+Average value of parameters in the most frequent 
+quality range(most of the red wines belong to this group):
+Mean pH = 3.311
+mean alcohol = 10.252
+mean fixed acidity = 8.25
+Mean volatile acidity = 0.53
+Mean Density =0.99686
+
+### Were there any interesting or surprising interactions between features?
+Not really. 
+
+### OPTIONAL: Did you create any models with your dataset? Discuss the strengths
+###and limitations of your model.
+
+------
+
+# Final Plots and Summary
+
+### Plot One
+```{r echo=FALSE, Plot_One}
+qplot(x= as.factor(quality), data = df, geom= 'bar',
+      main = "Quality of Red-wines",  
+  	xlab="Quality", ylab="Numberof red-wines")
+```
+
+### Description One
+The first plot shows the quality of red wines. Most red wines have a
+quality of 5 or 6.
+Very low quality and high quality red-wines are less frequent.
+```{r echo=FALSE}
+summary(df$quality)
+```
+Mean quality is 5.636 while median is 6.
+
+### Plot Two
+```{r echo=FALSE, Plot_Two}
+ggplot(aes(x= quality, y= alcohol), data= df)+
+  geom_jitter(alpha= 0.6)+
+  geom_line(stat= "summary", fun.y =mean, linetype =2, color = 'blue')+
+  geom_line(stat= "summary", fun.y = quantile, fun.args = list(probs = .9),
+            color= "blue")+
+  labs(title="Distribution of alcohol content with quality", 
+       x="quality", 
+       y="alcohol (% by volume)")
+  
+```
+
+### Description Two
+The plot b/w alcohol content and quality of red-wines.The plot shows a quite 
+strong co-relation b/w the two parameters. the mean alcohol content 
+shows the increasing nature of alcohol content with quality of red-wines.
+
+
+```{r echo=FALSE}
+describeBy(df$alcohol,group = df$quality, mat = TRUE)
+```
+Summary of variation of alcohol content with quality.
+
+
+
+### Plot Three
+
+```{r echo=FALSE, Plot_Three}
+ggplot(data =df, aes(x=volatile.acidity, y=sulphates, size = alcohol, 
+                color=factor(df$quality))) + geom_point()+
+labs(title="Relationship between sulphates,volatile.acidity, alcohol & quality", 
+       x="volatile acidity (acetic acid - g / dm^3)", 
+       y="sulphates (potassium sulphate - g / dm3)")
+```
+
+### Description Three
+The plotshowsthe relationship between sulphates, volatile.acidity,
+alcohol and quality. The alcohol content is encoded as size and quality as color 
+ the higher quality red wines tend to be concentrated in the top left of 
+ the plot. This tends to be where the higher alcohol content (larger dots) 
+ are concentrated as well.
+
+```{r, echo=FALSE}
+head(df.group)
+```
+
+variation of parameters within quality groups.
+
+# Reflection
+The dataset contains information of about 1599 redwines with 13 variables to 
+represent its characteristics.
+Mostly parameters followed somewhat normal distribution.
+Mostly redwines in the data belong to quality 5& 6.
+I studied the relationship b/w quality of red wines and its various parameters 
+and relationship b/w various parameters.
+Lastly, I summarised the data into three quality groups.
+The quality of redwines was correlated with alcohol content and volatile acidity.
+Also, I assumed that pH would be controlled by alcohol content,
+but to my surprise pH was correalted to citric acid and fixed acidity.
+Not to forget, alcohol content and density were related too.
+
+I struggled with multivariate analysis. It was bit difficult to use three-four
+variables to use at the same time to draw plots. But, a little research here 
+and there worked finally.Also, it being my very first experience in R, it was
+a great experience exploring functions.
+
+Using the insights from correlation coefficients provided by the paired plots,
+it was interesting exploring quality using density plots with a different color
+for each quality. Once I had this plotted it was interesting to build up the
+multivariate scatter plots to visualize the relationship of different variables
+with quality by also varying the point size, using density plots on the x and y
+axis, and also using density plots.
+
+A next step would be to develop a statistical model to predict red wine
+quality based on the data in this dataset.

@@ -1,0 +1,293 @@
+
+
+
+
+<!DOCTYPE html>
+
+<style media="screen" type="text/css">
+
+  h1, h2, h3, h4 {
+  text-align: center;
+  font-family: "Palatino Linotype", Georgia;
+}
+
+header {
+  border-bottom: 1px solid #aaaaaa;
+}
+
+footer {
+  border-top: 1px solid #aaaaaa;
+}
+
+p {
+  width: 1200px;
+  text-align: left;
+  padding-left: 60px;
+}
+
+h3 {
+  margin: 20px 0 0 0;
+  padding: 0;
+  font-size: 20px;
+
+}
+
+h4 {
+    padding-left: 140px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    text-align: left;
+    font-size:18px;
+}
+
+</style>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Titanic - The ship that sank many</title>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+  <script type="text/javascript">
+
+    function draw_survivors(data) {
+
+          /* Clear SVG and create a new one */
+          var svg = d3.select("svg").selectAll("*").remove();
+          var svg = d3.select("svg")
+          var myChart = new dimple.chart(svg, data);
+
+          /* Set the right colors for tooltip */
+          myChart.defaultColors = [
+            new dimple.color("#B78383"),
+            new dimple.color("#ff0000")
+          ]; 
+
+          /* Define axis */
+          var x = myChart.addCategoryAxis("x","SurvivedC");
+          var y = myChart.addMeasureAxis("y","Survived");
+
+          /* Axis titles */
+          y.title = "Passengers";
+          x.title = "";
+
+          /* Add series */
+          var mySeries = myChart.addSeries(["SurvivedC"], dimple.plot.bar);
+          mySeries.aggregate = dimple.aggregateMethod.count;    
+
+          /* Custom tooltip */
+          mySeries.getTooltipText = function (e) {
+          if (e.aggField == "Not survived") { var status="No";}
+          if (e.aggField == "Survived") { var status="Yes";}
+            return [ "Passengers count" + ": " + e.cy,
+                    "Survived" + ": " + status
+                    ];
+          };
+
+          /* Draw */
+          myChart.draw(500);
+      }
+
+    function draw_sex(data) {
+          /* Clear SVG and create a new one */
+          var svg = d3.select("svg").selectAll("*").remove();
+          var svg = d3.select("svg")
+          var myChart = new dimple.chart(svg, data);
+          /* Set the right colors for tooltip */
+          myChart.defaultColors = [
+           new dimple.color("#B78383"),
+            new dimple.color("#FFFF00")
+          ]; 
+          /* Define axis and titles */
+          var x = myChart.addCategoryAxis("x", "Gender");
+          var y = myChart.addPctAxis("y","Survived");
+          myChart.title = "12345";
+          y.title = "Total passengers";
+          /* Add legend */
+          var myLegend = myChart.addLegend(1250, 60, 60, 200, "Right");
+          /* Add series */          
+          var mySeries = myChart.addSeries(["SurvivedC"], dimple.plot.bar);
+          mySeries.aggregate = dimple.aggregateMethod.count;
+          /* Custom tooltip */
+          mySeries.getTooltipText = function (e) {
+          return [ "Gender" + ": " + e.cx,
+                   "Status" + ": " + e.aggField,
+                   "Count" + ": " + e.yCount,
+                   "Percentage" + ": " + (e.height*100).toFixed(2) + "%"
+                  ];
+          };
+          /* Draw */
+          myChart.draw(500);
+      }
+
+      function draw_age(data) {
+          /* Clear SVG and create a new one */
+          var svg = d3.select("svg").selectAll("*").remove();
+          var svg = d3.select("svg")
+          var myChart = new dimple.chart(svg, data);
+          /* Set the right colors for tooltip */
+          myChart.defaultColors = [
+            new dimple.color("#B78383"),
+            new dimple.color("#FFFF00")
+          ]; 
+          /* Define axis */
+          var x = myChart.addCategoryAxis("x", "AgeClass");
+          var y = myChart.addPctAxis("y","Survived");
+          /* Order categories */
+          x.addOrderRule(["0-4", "5-9", "10-14", "15-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45-49", "50-54", "55-59", "60+", "N/A"]); 
+          /* Axis titles */
+          x.title = "Age groups";
+          y.title = "Total passengers";
+          /* Add legend */
+          var myLegend = myChart.addLegend(1300, 60, 60, 200, "Right");
+          /* Add series */
+          var mySeries = myChart.addSeries("SurvivedC", dimple.plot.bar);
+          mySeries.aggregate = dimple.aggregateMethod.count;
+          /* Custom tooltip */
+          mySeries.getTooltipText = function (e) {
+          return [ "Age class" + ": " + e.cx,
+                   "Status" + ": " + e.aggField,
+                   "Count" + ": " + e.yCount,
+                   "Percentage" + ": " + (e.height*100).toFixed(2) + "%"
+                  ];
+          };
+          /* Draw */
+          myChart.draw(500);
+      }
+
+      function draw_pclass(data) {
+          /* Clear SVG and create a new one */
+          var svg = d3.select("svg").selectAll("*").remove();
+          var svg = d3.select("svg")
+          var myChart = new dimple.chart(svg, data);
+          /* Set the right colors for tooltip */
+          myChart.defaultColors = [
+            new dimple.color("#B78383"),
+            new dimple.color("#F00F00")
+          ]; 
+          /* Define axis */
+          var x = myChart.addCategoryAxis("x","Pclass"); 
+          var y = myChart.addPctAxis("y","Survived");
+          /* Order categories */
+          x.addOrderRule("Pclass");
+          /* Axis titles */
+          x.title = "Passenger class";
+          y.title = "Total passengers";
+          /* Add legend */
+          var myLegend = myChart.addLegend(1300, 60, 60, 200, "Right");
+          /* Add series */
+          var mySeries = myChart.addSeries(["SurvivedC"], dimple.plot.bar);
+          mySeries.aggregate = dimple.aggregateMethod.count;
+          /* Custom tooltip */
+          mySeries.getTooltipText = function (e) {
+          return [ "Cabin class" + ": " + e.cx,
+                   "Status" + ": " + e.aggField,
+                   "Count" + ": " + e.yCount,
+                   "Percentage" + ": " + (e.height*100).toFixed(2) + "%"
+                  ];
+          };
+          /* Draw */
+          myChart.draw(500);
+        };
+      </script>
+  </head>
+
+<body>
+  <header>
+    <h1>Dynamics of RMS Titanic Catastrophe </h1>
+    <h2>What made a good fit ?</h2>
+  </header>
+  <br>
+  <div id="buttons" style="padding-left: 75px">
+  <button id="step1">Do you know</button>
+  <button id="step2"> Gender Bias</button>
+  <button id="step3">Age Effect</button>
+  <button id="step4">Wealth factor</button>
+  <button id="step5">Conclusion</button>
+  </div>
+  <h3 id="story">
+  </h3>
+  <h4 id="graph_title">
+  </h4>
+  <div id="svg_container">
+  </div>
+<script type="text/javascript">
+
+
+  var text1 = "<p>In 1912 the RMS Titanic, a British luxury passenger liner, sank after colliding with an iceberg during her maiden voyage from Southampton to New York City</p> \
+  <p>Of the 2,224 passengers and crew aboard, more than 1,500 died, making it one of the deadliest commercial peacetime maritime disasters in modern history</p> \
+  <p>Around, 60% of passengers didn't survive. \"Do you know what made a good fit ?\"</p>";
+
+  var text2 = "<p>Seemslike, gender played its part. Women had a better survival rate. In case of emergency, women are given preference.</p> \
+  <p>Only 19% of male survived while a whooping 74% of women survived</p> \
+  <p>Lets see what else had an impact on survival rate</p>";
+
+  var text3 = "<p>Looking at the age class of passengers, we can see how young people (less than 10 years old) have a greater survival rate</p> \
+  <p> The worst survival rate is for people over 60 years old with just 25% brought to safety</p> \
+  <p></p>";
+
+  var text4 = 
+  "<p>But what about the social-economical status? Look !There is a relation between the Cabin class (a factor of wealth) and survival rate</p> \
+  <p>63% of people in First Class, survived, while only 24% of passengers in the Third Class did</p>";
+
+  var text5 = "<p>\"Women and children first\" is a code of conduct whereby the lives of women and children are to be saved first in an emergency, and it did play an important role in the catastrophe</p> \
+  <p>As a consequence, 74% of the women and 52% of the children on board were saved, but only 21% of the men</p>\
+  <p>Also,wealth too had a role to play.The richs had a higher survival rate, followed by passengers in second class</p> \
+  <p>\"Women and children first. And then money\" made a good fit !</p>";
+
+  /* Create the svg inside container */
+  function set_svg() {
+        "use strict";
+        var margin = 75,
+        width = 1400 - margin,
+        height = 600 - margin;
+        var svg = d3.select("#svg_container")
+          .append("svg")
+          .attr("width", width + margin)
+          .attr("height", height + margin)
+          .attr("style","margin-top: -40")
+          .append("g")
+          .attr("class","chart");
+        }
+
+  /* Each onclick set the right content of svg, title and story */
+  d3.select("#step1").on("click", function() {
+       var svg = d3.select("svg").remove();
+       set_svg()
+       d3.tsv("http://localhost:8000/titanic_data.tsv", draw_survivors);
+       var text = d3.select("#story").html(text1);
+       var text = d3.select("#graph_title").html(title1);
+       });  
+
+  d3.select("#step2").on("click", function() {
+       var svg = d3.select("svg").remove();
+       set_svg()
+       d3.tsv("http://localhost:8000/titanic_data.tsv", draw_sex);
+       var text = d3.select("#story").html(text2);
+       var text = d3.select("#graph_title").html(title2);
+     });  
+  d3.select("#step3").on("click", function() {
+       var svg = d3.select("svg").remove();
+       set_svg()
+       d3.tsv("http://localhost:8000/titanic_data.tsv", draw_age);
+       var text = d3.select("#story").html(text3);
+       var text = d3.select("#graph_title").html(title3);
+       });  
+  d3.select("#step4").on("click", function() {
+       var svg = d3.select("svg").remove();
+       set_svg()
+       d3.tsv("http://localhost:8000/titanic_data.tsv", draw_pclass);
+       var text = d3.select("#story").html(text4);
+       var text = d3.select("#graph_title").html(title4);
+       });  
+  d3.select("#step5").on("click", function() {
+       var svg = d3.select("svg").remove();
+       var text = d3.select("#story").html(text5);
+       var text = d3.select("#graph_title").html(title5);
+       });  
+  step1.click()  
+  </script>
+</body>
+</html>
